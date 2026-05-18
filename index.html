@@ -17,6 +17,60 @@
 
 
 <body>
+  <!-- LOGIN POPUP
+<div class="modal fade"
+     id="loginModal"
+     tabindex="-1"
+     aria-hidden="true"
+     data-bs-backdrop="static"
+     data-bs-keyboard="false">
+
+  <div class="modal-dialog modal-dialog-centered">
+
+    <div class="modal-content p-3">
+
+      <div class="modal-header border-0">
+
+        <h4 class="modal-title">
+          Welcome to AK Tours
+        </h4>
+
+      </div>
+
+      <div class="modal-body">
+
+        USERNAME -->
+        <!-- <input type="text"
+               id="popupName"
+               class="form-control mb-3"
+               placeholder="Enter Username"> -->
+
+        <!-- EMAIL
+        <input type="email"
+               id="popupEmail"
+               class="form-control mb-3"
+               placeholder="Enter Gmail ID"> -->
+
+        <!-- PHONE -->
+        <!-- <input type="tel"
+               id="popupPhone"
+               class="form-control mb-3"
+               placeholder="Enter Phone Number">
+
+        <button class="btn btn-success w-100"
+                onclick="savePopupUser()">
+
+          Continue
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div> -->
     
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
@@ -443,7 +497,7 @@ setInterval( () => {
   </script>
   
 <!-- BOOKING SECTION -->
-<section id="booking" style="padding:50px;background:#f8f9fa;">
+<section id="booking">
   <div class="container">
 
     <h2 class="text-center mb-4">Book Your Trip</h2>
@@ -532,25 +586,32 @@ const data = {
     "Mysuru City": [
       "Mysore Palace",
       "Mysore Zoo",
-      "Chamundi Hills"
+      "Chamundi Hills",
+    "payana car museum",
+    "Ranganathittu bird sanctuary",
+    "Brindavan Garden",
+    "Krishna raja sagara dam",
+    "GRS fantasy park",
+    "Railway museum",
+    "St. Philomena Church",
+    "Jaganmohan palace",
+    "Melody world wax museum",
+    "karanji lake",
+    "Lalitha mahal palace",
+    "Sand sculpture museum"
     ]
   },
 
   outside: {
-    "Coorg": [
-      "Abbey Falls",
-      "Dubare Elephant Camp"
-    ],
-
-    "Ooty": [
-      "Botanical Garden",
-      "Pykara Falls"
-    ],
-
-    "MM Hills": [
-      "Temple",
-      "Forest View"
-    ]
+    // 
+     "Coorg": ["Abbey Falls", "Dubare elephant camp","Karada village","Harangi dam","Honnamana kere","Tadiandamol trek","Kote betta","Madikeri fort","Omkareshwara temple","Mallalli fort","Mandalpatti peak","Nehru mantapa","Raja's seat","Somwarpet","Talakaveri temple","Chiklihole reservoir","Tibetan namdroling monastery","Nalknad palace","Gaddige Raja's tomb","Padi igguthappa"],
+  "Ooty": ["Rose Garden", "Ooty tea factory and tea museum", "Pykara Falls","Nilgiri mountain railway","moyar river","Emerald lake","Avalanche lake","Shooting point","Botanical garden","Ooty lake","Doddabetta peak","Pine forest","Kotagiri falls"],
+  "Hassan": ["Ishwara temple","Jenukal temple","hasanamba temple","Male malleshwara gudi seegegudda","pandavar gudda","Gorur dam","Sri ranganathaswamy temple","Ramanathapura temple","Chennakeshava temple","Kappe chennigaraya temple","Hoysaleshwara temple halebidu","Lakshmi narasimha temple","Shettihalli rosary church","Manjarabad fort","Bettada byraveshwara temple","Sakleshpur railway bridge", "Jenukal gudda","Bisle ghat viewpoint","Mallalli falls"],
+  "Mandya": ["Adichunchanagiri","Kokkare bellur bird sanctuary","Pandavapura","Srirangapatna fort","Panchalingeshwara temple","Edumuri balmuri falls","Brahmeshwara temple","Shivapura satyagraha soudha","Thonnur lake","Nimishamba temple","Daria daulat bagh","gumbaz","Hemagiri falls","Ranaganathaswamy temple","Lakshminarayana temple","Sri kanteshwara temple","Shivanasamudra Falls","Melkote"],
+  "Chamarajanagar": ["Muthathi forest","Bharachukki falls","Biligirirangana hills","Himavad gopalaswamy temple","Bandipur National Park", "chamarajeshwara temple","Ramalingeshwara temple","Balemantapa","Male mahadeshwara temple","Huligana maradi","Maradigudda","Trimbakeshwara temple","Palar border view point","Hogenakkal falls"],
+  "Ramanagara": ["Mekedatu and sangama", "Bilikal rangaswamy temple","Nadi narasimha swamy temple","Savandurga","Ramadevara betta","Navaneetha krishna temple","Bidarakatte trek","Kadu","Shree revanasiddeshwara temple","Chunchi falls"],
+  "Tumkur": ["Mandaragiri jain temple", "Madhugiri Fort","Devarayanadurga hills","Siddaganga mutta","Jayamangali blackbuck reserve","Markonahalli dam","Namada chilume","Siddara betta","Akshayakalpa organic","Hutridurga fort"],
+  "Chikkamagaluru": ["Mullayanagiri", "Baba budangiri","Hebbe falls","Jhari falls","Kalhatti falls","Kemmangundi","Z point","Hirekolale lake","Ayyanakere lake","Bhadra wildlife sanctuary","Bhadra dam","Kudremukh national park","Kudremukh peak","Gangamoola","Ballalarayana durga fort","Ballalarayana durga trek","Hanuman gundi falls","Kadambi falls","Sringeri sharada peetham","Annapoorneshwari temple","Belavadi veera narayana temple","Amruteshwara temple amruthapura","Devaramane viewpoint","Muthodi forest","Coffee museum","Manikyadhara falls","Datta peetha","Hirekolale viewpoint","Mullayanagiri treak","Kudremukh treak"]
   }
 };
 
@@ -778,32 +839,7 @@ window.submitBooking = async function () {
 
 };
 </script>
-<!-- <script>
 
-if(
-  localStorage.getItem("userLoggedIn")
-  !== "true"
-){
-
-  window.location.href =
-    "login.html";
-
-}
-
-</script> -->
-<!-- <script>
-
-if (
-  localStorage.getItem("userLoggedIn")
-  !== "true"
-) {
-
-  window.location.href =
-    "./login.html";
-
-}
-
-</script> -->
 </body>
 
 </html>

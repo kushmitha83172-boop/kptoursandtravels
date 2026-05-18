@@ -8,7 +8,7 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0" />
 
-  <title>Admin Panel</title>
+  <title>AK Tours Admin Panel</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet">
@@ -16,21 +16,79 @@
   <style>
 
     body{
-      background:#f1f5f9;
-      font-family:Arial;
+      background:#0f172a;
+      font-family:Arial,sans-serif;
+      color:white;
     }
 
     .topbar{
-      background:#0f172a;
-      color:white;
-      padding:15px;
+      background:#020617;
+      padding:20px;
+      box-shadow:0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .topbar h3{
+      margin:0;
+      color:#00ffff;
+      font-weight:bold;
     }
 
     .card-box{
-      background:white;
+      background:#1e293b;
       padding:20px;
-      border-radius:10px;
-      margin-top:20px;
+      border-radius:15px;
+      margin-top:25px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.3);
+      overflow-x:auto;
+    }
+
+    h4{
+      color:#facc15;
+      margin-bottom:20px;
+    }
+
+    table{
+      color:white !important;
+    }
+
+    .table-dark{
+      background:#020617 !important;
+    }
+
+    .table td,
+    .table th{
+      vertical-align:middle;
+    }
+
+    .btn-danger{
+      border:none;
+      border-radius:8px;
+      padding:5px 12px;
+    }
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+      margin-top:25px;
+    }
+
+    .stat-card{
+      background:#1e293b;
+      padding:20px;
+      border-radius:15px;
+      text-align:center;
+      box-shadow:0 5px 20px rgba(0,0,0,0.3);
+    }
+
+    .stat-card h2{
+      color:#00ffff;
+      font-size:35px;
+    }
+
+    .stat-card p{
+      color:#cbd5e1;
+      margin:0;
     }
 
   </style>
@@ -39,15 +97,41 @@
 
 <body>
 
+<!-- TOPBAR -->
+
 <div class="topbar">
 
   <h3>
-    AK Tours Admin
+    AK Tours & Travels Admin Panel
   </h3>
 
 </div>
 
-<div class="container">
+<div class="container py-4">
+
+  <!-- STATS -->
+
+  <div class="stats">
+
+    <div class="stat-card">
+
+      <h2 id="userCount">0</h2>
+
+      <p>Total Users</p>
+
+    </div>
+
+    <div class="stat-card">
+
+      <h2 id="bookingCount">0</h2>
+
+      <p>Total Bookings</p>
+
+    </div>
+
+  </div>
+
+  <!-- USERS
 
   <div class="card-box">
 
@@ -55,11 +139,13 @@
       Registered Users
     </h4>
 
-    <table class="table table-bordered">
+    <table class="table table-bordered table-dark">
 
-      <thead class="table-dark">
+      <thead>
 
         <tr>
+
+          <th>SL NO</th>
 
           <th>Email</th>
 
@@ -73,7 +159,9 @@
 
     </table>
 
-  </div>
+  </div> -->
+
+  <!-- BOOKINGS -->
 
   <div class="card-box">
 
@@ -81,21 +169,31 @@
       Bookings
     </h4>
 
-    <table class="table table-bordered">
+    <table class="table table-bordered table-dark">
 
-      <thead class="table-dark">
+      <thead>
 
         <tr>
+
+          <th>SL NO</th>
 
           <th>Name</th>
 
           <th>Phone</th>
 
+          <th>Category</th>
+
           <th>Place</th>
 
           <th>Vehicle</th>
 
+          <th>Payment</th>
+
+          <th>Date</th>
+
           <th>Total</th>
+
+          <th>Action</th>
 
         </tr>
 
@@ -109,8 +207,191 @@
 
 </div>
 
-<script type="module"
-src="./secure_admin_panel.js"></script>
+<script type="module">
+
+import { db } from "./firebase.js";
+
+import {
+
+  collection,
+  getDocs,
+  query,
+  orderBy,
+  deleteDoc,
+  doc
+
+}
+
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+/* USERS */
+
+async function loadUsers(){
+
+  const usersTable =
+    document.getElementById("usersTable");
+
+  usersTable.innerHTML = "";
+
+  const querySnapshot =
+    await getDocs(collection(db,"users"));
+
+  let count = 1;
+
+  document.getElementById("userCount")
+    .innerText = querySnapshot.size;
+
+  querySnapshot.forEach((userDoc)=>{
+
+    const data = userDoc.data();
+
+    usersTable.innerHTML += `
+
+      <tr>
+
+        <td>${count}</td>
+
+        <td>${data.email || ""}</td>
+
+        <td>
+
+          ${
+            data.createdAt
+            ? new Date(
+                data.createdAt.seconds * 1000
+              ).toLocaleString()
+            : ""
+          }
+
+        </td>
+
+      </tr>
+
+    `;
+
+    count++;
+
+  });
+
+}
+
+/* BOOKINGS */
+
+async function loadBookings(){
+
+  const bookingTable =
+    document.getElementById("bookingTable");
+
+  bookingTable.innerHTML = "";
+
+  /* ASCENDING ORDER */
+
+  const q = query(
+
+    collection(db,"bookings"),
+
+    orderBy("createdAt","asc")
+
+  );
+
+  const querySnapshot =
+    await getDocs(q);
+
+  document.getElementById("bookingCount")
+    .innerText = querySnapshot.size;
+
+  let count = 1;
+
+  querySnapshot.forEach((bookingDoc)=>{
+
+    const data =
+      bookingDoc.data();
+
+    bookingTable.innerHTML += `
+
+      <tr>
+
+        <td>${count}</td>
+
+        <td>${data.name}</td>
+
+        <td>${data.phone}</td>
+
+        <td>${data.category}</td>
+
+        <td>${data.place}</td>
+
+        <td>${data.vehicle}</td>
+
+        <td>${data.payment}</td>
+
+        <td>${data.date}</td>
+
+        <td>₹${data.total}</td>
+
+        <td>
+
+          <button
+            class="btn btn-danger btn-sm"
+            onclick="deleteBooking('${bookingDoc.id}')">
+
+            Delete
+
+          </button>
+
+        </td>
+
+      </tr>
+
+    `;
+
+    count++;
+
+  });
+
+}
+
+/* DELETE */
+
+window.deleteBooking =
+async function(id){
+
+  const confirmDelete =
+    confirm(
+      "Delete this booking?"
+    );
+
+  if(!confirmDelete) return;
+
+  try{
+
+    await deleteDoc(
+      doc(db,"bookings",id)
+    );
+
+    alert("Booking Deleted ✅");
+
+    loadBookings();
+
+  }
+
+  catch(error){
+
+    console.log(error);
+
+    alert("Delete Failed ❌");
+
+  }
+
+};
+
+/* INITIAL LOAD */
+
+loadUsers();
+
+loadBookings();
+
+</script>
 
 </body>
 
