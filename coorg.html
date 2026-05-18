@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coorg Places - AK Tours and Travels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="./fa8ac7c4-98cd-48c4-a129-f15012583b3b.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="https://svbstoursandtravels.netlify.app/">
+                <!-- <img src="https://res.cloudinary.com/svbs/image/upload/v1771502248/SVBS-Logo_cmgae9.png" height="50px"
+                    width="250px" alt="" style="border-radius: 10px;"> -->
+                    <img src="./fa8ac7c4-98cd-48c4-a129-f15012583b3b.png" height="80px"
+          width="200px" alt="" style="border-radius: 10px;">
+            </a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class='nav-link' href='/'>Home</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#tours'>Tours</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#inside-places'>Mysuru-Places</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#outside-places'>Mysuru-Outside-Places</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#vehicles'>Vehicles</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#about'>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- tours -->
+    <section id="tours">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Coorg Packages</h2>
+            </div>
+            <!-- <h4 class="text-center text-warning mb-4">Coorg Inside Places</h4> -->
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changeaf" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Abbey Falls</h5>
+                                Abbey Falls is one of the most popular waterfalls in Coorg, surrounded by lush coffee
+                                plantations and spice estates. The water cascades from a height of about 70 feet
+                                creating a powerful and scenic view.
+                                A hanging bridge opposite the falls allows visitors to enjoy a closer view and take
+                                photographs.
+                                The misty atmosphere and sound of rushing water make it a refreshing nature spot.
+                            </div>
+                        </div>
+                        <h5>Abbey Falls</h5>
+                        <p>It is a beautiful waterfall near Madikeri, surrounded by lush coffee plantations and dense
+                            greenery..</p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangeaf = document.querySelector('.auto-changeaf');
+                        const autoChangeImagesaf = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401049/abbey_falls_1_kajfjv.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401052/abbey_falls_1_uluaix.avif',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401053/abbey_falls_hnvypp.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401047/abbey_falls_1_z06jgk.avif',
+                            'https://www.trawell.in/admin/images/upload/206806193AbbeyFalls_Main.jpg'
+                        ];
+                        let autoChangeIndexaf = 0;
+                        // Set first image immediately
+                        autoChangeaf.src = autoChangeImagesaf[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexaf = (autoChangeIndexaf + 1) % autoChangeImagesaf.length;
+                            autoChangeaf.setAttribute("src", autoChangeImagesaf[autoChangeIndexaf]);
+                        }, 2000);
+                    </script>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changede" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Dubare Elephant Camp</h5>
+                                Dubare Elephant Camp is a famous wildlife attraction located on the banks of the Kaveri
+                                River.
+                                Visitors can observe elephants being bathed, fed, and trained by experienced mahouts.
+                                The camp provides opportunities to learn about elephant behavior and conservation.
+                                Coracle rides on the river add an adventurous touch to the visit.
+
+                            </div>
+                        </div>
+                        <h5>Dubare Elephant Camp</h5>
+                        <p>It is a popular eco-tourism spot where visitors can interact with and learn about elephants.
+                        </p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangede = document.querySelector('.auto-changede');
+                        const autoChangeImagesde = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401073/dubare_elephant_camp_whkg7m.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401080/dubare_elephant_camp._p6oava.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401082/dubare_elephant_camp._1_phvc8c.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401082/dubare_elephant_camp._1_phvc8c.jpg',
+                            'https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/2024/03/Dubare-Camp-scaled.jpg'
+                        ];
+                        let autoChangeIndexde = 0;
+                        // Set first image immediately
+                        autoChangede.src = autoChangeImagesde[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexde = (autoChangeIndexde + 1) % autoChangeImagesde.length;
+                            autoChangede.setAttribute("src", autoChangeImagesde[autoChangeIndexde]);
+                        }, 2000);
+                    </script>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changekv" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Karada Village</h5>
+                                Karada Village is a peaceful settlement near popular trekking routes in Coorg.
+                                The village reflects the traditional culture and lifestyle of the Kodava community.
+                                Small homestays provide comfortable accommodation for trekkers and travelers. Its quiet
+                                surroundings make it an ideal place to relax and experience rural life.
+
+                            </div>
+                        </div>
+                        <h5>Karada Village</h5>
+                        <p>It is known for its lush greenery, coffee plantations, and scenic landscapes.</p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangekv = document.querySelector('.auto-changekv');
+                        const autoChangeImageskv = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401219/karada_4_hybpat.webp',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401218/karada_3_nhbbpa.webp',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401216/karada_2_ssmotl.webp',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401215/karada_1_ixtbxn.webp'
+
+                        ];
+                        let autoChangeIndexkv = 0;
+                        // Set first image immediately
+                        autoChangekv.src = autoChangeImageskv[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexkv = (autoChangeIndexkv + 1) % autoChangeImageskv.length;
+                            autoChangekv.setAttribute("src", autoChangeImageskv[autoChangeIndexkv]);
+                        }, 2000);
+                    </script>
+                </div>
+                <!-- </section> -->
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changehd" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Harangi Dam</h5>
+                                Harangi Dam is built across the Harangi River, a tributary of the Kaveri.
+                                The dam becomes especially attractive during the monsoon when its gates release large
+                                volumes of water.
+                                The surrounding landscape offers scenic views and cool breezes. Many visitors come here
+                                to enjoy peaceful evenings and photography.
+
+                            </div>
+                        </div>
+                        <h5>Harangi Dam</h5>
+                        <p>It is a picturesque reservoir built across the Harangi River, surrounded by lush greenery.
+                        </p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangehd = document.querySelector('.auto-changehd');
+                        const autoChangeImageshd = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401083/harangi_dam_kpsfyj.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401089/harangi_dam_x0vlvs.webp',
+                            'https://coorgtourism.co.in/images/tourist-places/harangi-dam-coorg/harangi-dam-coorg-tourism-entry-ticket-price.jpg',
+                            'https://www.trawell.in/admin/images/upload/176089739HarangiDam_Main.jpg'
+
+                        ];
+                        let autoChangeIndexhd = 0;
+                        // Set first image immediately
+                        autoChangehd.src = autoChangeImageshd[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexhd = (autoChangeIndexhd + 1) % autoChangeImageshd.length;
+                            autoChangehd.setAttribute("src", autoChangeImageshd[autoChangeIndexhd]);
+                        }, 2000);
+                    </script>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changehk" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Honnamana Kere</h5>
+                                Honnamana Kere is the largest natural lake in Coorg and holds religious importance. It
+                                is associated with Goddess Honnamma and local legends.
+                                Devotees gather here during the Gowri festival to offer prayers. The serene waters and
+                                surrounding hills create a calm and spiritual environment.
+
+                            </div>
+                        </div>
+                        <h5>Honnamana Kere</h5>
+                        <p>It is the largest natural lake in Coorg, known for its scenic beauty and religious
+                            significance.</p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangehk = document.querySelector('.auto-changehk');
+                        const autoChangeImageshk = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401156/Honnamanakere_lake_aplsra.webp',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401151/-honnamanakeree_mwllpj.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401142/Harangi_dam_1_ludi2v.webp',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401152/kere_fydzqn.webp',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401154/lake_ubzdsg.webp'
+
+                        ];
+                        let autoChangeIndexhk = 0;
+                        // Set first image immediately
+                        autoChangehk.src = autoChangeImageshk[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexhk = (autoChangeIndexhk + 1) % autoChangeImageshk.length;
+                            autoChangehk.setAttribute("src", autoChangeImageshk[autoChangeIndexhk]);
+                        }, 2000);
+                    </script>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changett" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Tadiandamol Trek</h5>
+                                Tadiandamol is the highest peak in Coorg and a popular trekking destination.
+                                The trail passes through dense forests, grasslands, and scenic hills.
+                                Trekkers enjoy breathtaking views of the Western Ghats from the summit. It is especially
+                                beautiful during early mornings and clear days.
+
+                            </div>
+                        </div>
+                        <h5>Tadiandamol Trek</h5>
+                        <p>It is a scenic hike to the highest peak in Coorg, offering breathtaking views of the Western
+                            Ghats.</p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangett = document.querySelector('.auto-changett');
+                        const autoChangeImagestt = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401134/tadiandamol3_m0xl58.webp',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401133/tadiandamol5_xlmkrt.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401132/tadiandamol4_bxcwy6.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401123/tadiandamol2_higc1k.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401120/tadiandamol1_ctmgbi.jpg'
+
+                        ];
+                        let autoChangeIndextt = 0;
+                        // Set first image immediately
+                        autoChangett.src = autoChangeImagestt[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndextt = (autoChangeIndextt + 1) % autoChangeImagestt.length;
+                            autoChangett.setAttribute("src", autoChangeImagestt[autoChangeIndextt]);
+                        }, 2000);
+                    </script>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changekb" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Kote Betta</h5>
+                                Kote Betta is the third-highest peak in Coorg and a well-known trekking destination.
+                                The trek is moderately easy and suitable for beginners and nature lovers. Along the
+                                trail, trekkers pass through forests and open landscapes.
+                                The summit provides panoramic views of nearby hills and villages.
+
+                            </div>
+                        </div>
+                        <h5>Kote Betta</h5>
+                        <p>It is the third-highest peak in Coorg, It has panoramic views of the Western Ghats</p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangekb = document.querySelector('.auto-changekb');
+                        const autoChangeImageskb = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401192/kotebetta_treck_leftgy.webp',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401160/Mandalpatti_view_point_g7bubk.jpg',
+                            'https://media1.thrillophilia.com/filestore/9iwj8sdnbbs3h0b7gocp1gix8k7a_trek.png',
+                            'https://dq1q7qkthxkc0.cloudfront.net/thumbnails/345x230/UpdatedMedia/a8a11204-6eb4-4f83-84a6-41da70e0d5c2.webp'
+
+                        ];
+                        let autoChangeIndexkb = 0;
+                        // Set first image immediately
+                        autoChangekb.src = autoChangeImageskb[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexkb = (autoChangeIndexkb + 1) % autoChangeImageskb.length;
+                            autoChangekb.setAttribute("src", autoChangeImageskb[autoChangeIndexkb]);
+                        }, 2000);
+                    </script>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changemf" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Madikeri Fort</h5>
+                                Madikeri Fort is an important historical landmark located in the center of Madikeri
+                                town. The fort has witnessed the rule of several dynasties including the Kodava kings
+                                and the British.
+                                Inside the fort, visitors can see a museum displaying historical artifacts and weapons.
+                                The structure reflects a blend of Indian and European architectural styles.
+
+                            </div>
+                        </div>
+                        <h5>Madikeri Fort</h5>
+                        <p>Madikeri Fort is a historic fort in the heart of Madikeri known for its colonial architecture
+                            and rich heritage.</p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangemf = document.querySelector('.auto-changemf');
+                        const autoChangeImagesmf = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401146/madkeri_fort1_acrqkw.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401142/madikeri_fort_2_z5qvkb.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401141/madikeri_fort_3_c4ftcq.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401138/madikeri_fort_1_kjgdnq.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401133/madikeri_fort_ipupms.jpg'
+                        ];
+                        let autoChangeIndexmf = 0;
+                        // Set first image immediately
+                        autoChangemf.src = autoChangeImagesmf[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexmf = (autoChangeIndexmf + 1) % autoChangeImagesmf.length;
+                            autoChangemf.setAttribute("src", autoChangeImagesmf[autoChangeIndexmf]);
+                        }, 2000);
+                    </script>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changeot" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Omkareshwara Temple</h5>
+                                Omkareshwara Temple is a famous shrine dedicated to Lord Shiva.
+                                The temple has a unique architectural style that combines Islamic and Gothic influences.
+                                A small pond in front of the temple enhances its beauty and peaceful atmosphere.
+                                Devotees and tourists visit the temple for prayer and quiet reflection.
+
+
+                            </div>
+                        </div>
+                        <h5>Omkareshwara Temple</h5>
+                        <p>It is a historic Shiva temple known for its unique blend of Islamic and Gothic architectural
+                            styles</p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangeot = document.querySelector('.auto-changeot');
+                        const autoChangeImagesot = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401214/omkareshwara-temple_suzwoj.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401150/omkareshwara-temple_bd6evd.webp',
+                            'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhb_k-3NB6NixwYyb7tZmJ-Qyhjfo_g05hVFwu9rlRtXDfe-YGf8a4UxaRJmEokCeuwwqliemRAshcbf6E00TGVGb6AQjYbmYtcvkeUkqRMw2ngwoK0CnIuK6JAcIW-q-d3L0fe38pDK9Q/s1600/fb+omkareshwar+temple.jpg',
+                            'https://coorgtourism.co.in/images/tourist-places/omkareshwara-temple-coorg/omkareshwara-temple-coorg-tourism-location-address.jpg',
+                            'https://visitplacesindia.com/wp-content/uploads/2025/04/omkareshwara-temple-coorg.jpg'
+
+                        ];
+                        let autoChangeIndexot = 0;
+                        // Set first image immediately
+                        autoChangeot.src = autoChangeImagesot[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexot = (autoChangeIndexot + 1) % autoChangeImagesot.length;
+                            autoChangeot.setAttribute("src", autoChangeImagesot[autoChangeIndexot]);
+                        }, 2000);
+                    </script>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changeml" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Mallalli Falls</h5>
+                                Mallalli Falls is a spectacular waterfall located near the foothills of the Pushpagiri
+                                range.
+                                Water flows down rocky cliffs creating a dramatic natural scene.
+                                \Visitors can reach closer to the falls by descending a long flight of steps. The
+                                surrounding greenery makes it especially beautiful during the monsoon season.
+
+                            </div>
+                        </div>
+                        <h5>Mallalli Falls</h5>
+                        <p>It is a majestic waterfall formed by the Kumaradhara River,It has lush hills and scenic
+                            viewpoints.</p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangeml = document.querySelector('.auto-changeml');
+                        const autoChangeImagesml = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401211/Mallalli-falls-Coorg_qfvx8k.avif',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401062/mallali-falls4_dtptpw.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401060/mallali-falls3_dqemmx.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401059/mallali-falls2_j8yjqv.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401054/mallali-falls1_qgwta0.jpg'
+
+                        ];
+                        let autoChangeIndexml = 0;
+                        // Set first image immediately
+                        autoChangeml.src = autoChangeImagesml[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexml = (autoChangeIndexml + 1) % autoChangeImagesml.length;
+                            autoChangeml.setAttribute("src", autoChangeImagesml[autoChangeIndexml]);
+                        }, 2000);
+                    </script>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changemp" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Mandalpatti Peak</h5>
+                                Mandalpatti is a scenic hilltop viewpoint known for its breathtaking sunrise and sunset
+                                views.
+                                The journey often includes a jeep ride through rough forest roads.
+                                From the top, visitors can see clouds floating below the hills during early mornings. It
+                                is a favorite spot for photographers and nature lovers.
+
+
+                            </div>
+                        </div>
+                        <h5>Mandalpatti Peak</h5>
+                        <p>It is famous for its misty landscapes and breathtaking panoramic views of the Western Ghats
+                        </p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangemp = document.querySelector('.auto-changemp');
+                        const autoChangeImagesmp = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401066/mandalpatti-trek_neyihs.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401070/mandalpatti-trek2_pymcov.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401070/mandalpatti-trek1_vxj8ag.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401076/mandalpatti-trek3_f4ivw8.jpg'
+
+
+                        ];
+                        let autoChangeIndexmp = 0;
+                        // Set first image immediately
+                        autoChangemp.src = autoChangeImagesmp[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexmp = (autoChangeIndexmp + 1) % autoChangeImagesmp.length;
+                            autoChangemp.setAttribute("src", autoChangeImagesmp[autoChangeIndexmp]);
+                        }, 2000);
+                    </script>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changenm" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Nehru Mantap</h5>
+                                Nehru Mantap is a peaceful pavilion located inside Raja’s Seat garden. It was built in
+                                memory of India’s first Prime Minister Jawaharlal Nehru.
+                                The structure provides a quiet place to sit and enjoy the surrounding landscape.
+                                Visitors can admire beautiful valley views from this viewpoint.
+
+                            </div>
+                        </div>
+                        <h5>Nehru Mantap</h5>
+                        <p>Nehru Mantap is a peaceful viewpoint in Madikeri offering beautiful sunset views over the
+                            lush valleys.</p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangenm = document.querySelector('.auto-changenm');
+                        const autoChangeImagesnm = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401088/nehru-mantap_tudlgz.jpg',
+                            'https://coorgtourism.co.in/images/tourist-places/nehru-mantap-coorg/nehru-mantap-coorg-tourism-entry-ticket-price.jpg',
+                            'https://coorgtourism.co.in/images/tourist-places/nehru-mantap-coorg/nehru-mantap-coorg-tourism-entry-fee.jpg'
+
+                        ];
+                        let autoChangeIndexnm = 0;
+                        // Set first image immediately
+                        autoChangenm.src = autoChangeImagesnm[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexnm = (autoChangeIndexnm + 1) % autoChangeImagesnm.length;
+                            autoChangenm.setAttribute("src", autoChangeImagesnm[autoChangeIndexnm]);
+                        }, 2000);
+                    </script>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changers" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Raja's Seat</h5>
+                                Raja's Seat is one of the most famous viewpoints in Madikeri.
+                                It was once a favorite relaxation spot for the Kodagu kings.
+                                The garden here is decorated with colorful seasonal flowers and a musical fountain.
+                                Tourists visit in the evening to enjoy the stunning sunset views.
+
+                            </div>
+                        </div>
+                        <h5>Raja's Seat</h5>
+                        <p>Raja's Seat is where the Kodagu kings once enjoyed stunning sunset views over the valley</p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangers = document.querySelector('.auto-changers');
+                        const autoChangeImagesrs = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401111/rajas_seat_3_eu6elm.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401114/rajas_seat_4_lhylwh.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401107/rajas_seat_2_hsvzfp.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401105/rajas_seat_1_uvwdnd.jpg'
+
+                        ];
+                        let autoChangeIndexrs = 0;
+                        // Set first image immediately
+                        autoChangers.src = autoChangeImagesrs[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexrs = (autoChangeIndexrs + 1) % autoChangeImagesrs.length;
+                            autoChangers.setAttribute("src", autoChangeImagesrs[autoChangeIndexrs]);
+                        }, 2000);
+                    </script>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changesp" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Somwarpet</h5>
+                                Somwarpet is a small town surrounded by hills, forests, and coffee plantations.
+                                It serves as an important gateway to several trekking and nature destinations.
+                                The region is known for its cool climate and scenic landscapes.
+                                Many travelers use it as a base to explore nearby waterfalls and hills.
+
+                            </div>
+                        </div>
+                        <h5>Somwarpet</h5>
+                        <p>It is a scenic town in Coorg known for its cool climate and beautiful hill landscapes.</p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangesp = document.querySelector('.auto-changesp');
+                        const autoChangeImagessp = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401120/somwarpet3_xrpkt3.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401119/somwarpet5_bhsny2.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401116/somwarpet4_oih9gy.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401112/somwarpet2_s7zupw.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401111/somwarpet1_nqv2ke.jpg'
+
+                        ];
+                        let autoChangeIndexsp = 0;
+                        // Set first image immediately
+                        autoChangesp.src = autoChangeImagessp[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexsp = (autoChangeIndexsp + 1) % autoChangeImagessp.length;
+                            autoChangesp.setAttribute("src", autoChangeImagessp[autoChangeIndexsp]);
+                        }, 2000);
+                    </script>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changetlt" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Talakaveri Temple</h5>
+                                Talakaveri Temple marks the sacred origin of the Kaveri River.
+                                The temple is located in the Brahmagiri Hills at a high altitude.
+                                Pilgrims gather here during the Tula Sankramana festival when the river is believed to
+                                emerge from the spring.
+                                A nearby viewpoint offers panoramic views of the surrounding mountains.
+
+                            </div>
+                        </div>
+                        <h5>Talakaveri Temple</h5>
+                        <p>Talakaveri Temple is a sacred temple marking the origin of the Kaveri River in the Brahmagiri
+                            hills.</p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangetlt = document.querySelector('.auto-changetlt');
+                        const autoChangeImagestlt = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401095/talakaveri_wynzmj.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401093/talakaveri-temple1_wlsjje.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401087/talacauvery-temple2_bdlt4q.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401047/kaveri-water3_gqasen.jpg'
+
+                        ];
+                        let autoChangeIndextlt = 0;
+                        // Set first image immediately
+                        autoChangetlt.src = autoChangeImagestlt[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndextlt = (autoChangeIndextlt + 1) % autoChangeImagestlt.length;
+                            autoChangetlt.setAttribute("src", autoChangeImagestlt[autoChangeIndextlt]);
+                        }, 2000);
+                    </script>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changecr" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Chiklihole Reservoir</h5>
+                                Chiklihole Reservoir is a calm and scenic water body located between Madikeri and
+                                Kushalnagar.
+                                The area is less crowded compared to other tourist spots in Coorg.
+                                Visitors often come here for picnics and peaceful walks.
+                                The reservoir is especially beautiful during sunset when the sky reflects on the water.
+
+                            </div>
+                        </div>
+                        <h5>Chiklihole Reservoir</h5>
+                        <p>It is a serene reservoir surrounded by lush greenery, known for its peaceful views and
+                            beautiful sunsets.</p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangecr = document.querySelector('.auto-changecr');
+                        const autoChangeImagescr = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401070/chiklihole_reservoir_4_ixocng.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401068/chiklihole_reservoir_3_rnh89e.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401066/chiklihole_reservoir_bvi1zy.webp',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401059/chiklihole_reservoir_2_bkwe6z.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401057/chiklihole_reservoir_1_otjlkr.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401056/chiklihole_reservoir_do4yll.jpg'
+
+
+                        ];
+                        let autoChangeIndexcr = 0;
+                        // Set first image immediately
+                        autoChangecr.src = autoChangeImagescr[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexcr = (autoChangeIndexcr + 1) % autoChangeImagescr.length;
+                            autoChangecr.setAttribute("src", autoChangeImagescr[autoChangeIndexcr]);
+                        }, 2000);
+                    </script>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changetnm" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Tibetan Namdroling Monastery</h5>
+                                Namdroling Monastery, also known as the Golden Temple, is one of the largest Tibetan
+                                Buddhist monasteries in India.
+                                It is located in Bylakuppe near Kushalnagar in the Coorg region of Karnataka.
+                                The monastery was established in 1963 by Pema Norbu Rinpoche to preserve Tibetan culture
+                                and Buddhist teachings.
+
+                            </div>
+                        </div>
+                        <h5>Tibetan Namdroling Monastery</h5>
+                        <p>It is a famous Tibetan Buddhist monastery, It has magnificent golden statues.</p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangetnm = document.querySelector('.auto-changetnm');
+                        const autoChangeImagestnm = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401238/tibetan_3_cfnaon.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401227/tibetan_4_cmnpzu.webp',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401227/tibetan_2_jsxiyb.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401226/tibetan_5_qhlurt.webp',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401222/tibetan_1_xdbasm.webp',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401214/Namdroling-Monastery_gemck2.jpg'
+
+                        ];
+                        let autoChangeIndextnm = 0;
+                        // Set first image immediately
+                        autoChangetnm.src = autoChangeImagestnm[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndextnm = (autoChangeIndextnm + 1) % autoChangeImagestnm.length;
+                            autoChangetnm.setAttribute("src", autoChangeImagestnm[autoChangeIndextnm]);
+                        }, 2000);
+                    </script>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changenp" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Nalknad Palace</h5>
+                                Nalknad Palace is a historic palace located near Madikeri in the Kodagu District.
+                                It was built in the 18th century by Dodda Veerarajendra, the last ruler of the Kodagu
+                                kingdom. The palace served as a safe place for the king to stay during battles.
+
+                            </div>
+                        </div>
+                        <h5>Nalknad Palace</h5>
+                        <p>Nalknad Palace is a historic palace built in the 18th century by Kodava king
+                            Doddaveerarajendra</p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangenp = document.querySelector('.auto-changenp');
+                        const autoChangeImagesnp = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401078/nalknad-aramane-palace_sf5af5.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401081/nalknad-aramane-palace1_vr47du.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401087/nalknad-aramane-palace2_wfjqcm.jpg'
+
+
+                        ];
+                        let autoChangeIndexnp = 0;
+                        // Set first image immediately
+                        autoChangenp.src = autoChangeImagesnp[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexnp = (autoChangeIndexnp + 1) % autoChangeImagesnp.length;
+                            autoChangenp.setAttribute("src", autoChangeImagesnp[autoChangeIndexnp]);
+                        }, 2000);
+                    </script>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changegrt" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Gaddige Raja’s Tomb</h5>
+                                Gaddige Raja’s Tomb is a historic monument located in Madikeri in the Kodagu District.
+                                It is the burial place of the Kodava kings who ruled the region in the past.
+                                The tombs were built in the Indo-Islamic architectural style with large domes and
+                                beautiful pillars.
+
+
+                            </div>
+                        </div>
+                        <h5>Gaddige Raja’s Tomb</h5>
+                        <p>It is a historic monument complex that houses the tombs of the Kodava kings.</p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangegrt = document.querySelector('.auto-changegrt');
+                        const autoChangeImagesgrt = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401111/gaddige_2_vbreuk.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401100/gaddige_4_q3oqjg.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401097/gaddige_3_te3k3h.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401094/gaddige_1_uyrjym.jpg'
+
+                        ];
+                        let autoChangeIndexgrt = 0;
+                        // Set first image immediately
+                        autoChangegrt.src = autoChangeImagesgrt[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexgrt = (autoChangeIndexgrt + 1) % autoChangeImagesgrt.length;
+                            autoChangegrt.setAttribute("src", autoChangeImagesgrt[autoChangeIndexgrt]);
+                        }, 2000);
+                    </script>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <img class="auto-changepi" src="">
+                        <!-- Overlay Content -->
+                        <div class="overlay">
+                            <div>
+                                <h5>Padi Igguthappa</h5>
+                                Padi Igguthappa Temple is a sacred temple dedicated to Lord Igguthappa,
+                                the guardian deity of the Kodava people.
+
+                            </div>
+                        </div>
+                        <h5>Padi Igguthappa</h5>
+                        <p>It is a sacred temple dedicated to Lord Igguthappa, the guardian deity of the Kodava people.
+                        </p>
+                        <button>Know More</button>
+                    </div>
+                    <script>
+                        const autoChangepi = document.querySelector('.auto-changepi');
+                        const autoChangeImagespi = [
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401103/padi_iggutappa1_nmysgl.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401106/padi_iggutappa4_k4dhgw.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401104/padi_iggutappa3_xgmpdn.jpg',
+                            'https://res.cloudinary.com/svbs/image/upload/v1773401103/padi_iggutappa2_ag6xog.jpg'
+
+                        ];
+                        let autoChangeIndexpi = 0;
+                        // Set first image immediately
+                        autoChangepi.src = autoChangeImagespi[0];
+                        // Start interval
+                        setInterval(() => {
+                            autoChangeIndexpi = (autoChangeIndexpi + 1) % autoChangeImagespi.length;
+                            autoChangepi.setAttribute("src", autoChangeImagespi[autoChangeIndexpi]);
+                        }, 2000);
+                    </script>
+                </div>
+                <div class="explore">
+          <a href='./outside.html'><button class="cta-more-btn">Explore Mysuru-outside places</button></a>
+        </div>
+
+            </div>
+        </div>
+    </section>
+
+   <!-- contact -->
+  <!-- CONTACT SECTION PREMIUM -->
+<section id="contact">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title text-center">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Contact us for bookings and enquiries.</p>
+    </div>
+
+    <div class="row mt-4" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius:15px; overflow:hidden;">
+
+      <!-- LEFT: CONTACT DETAILS -->
+      <div class="col-md-5 p-4" style="background:#0f172a; color:white;">
+        
+        <h4 style="margin-bottom:20px;">📍 Our Location</h4>
+
+        <p>
+          <i class="fa fa-map text-warning"></i>
+          <!-- Kuvempu Nagar 2nd Stage,<br>
+          Mysuru, Karnataka -->
+            <!-- 476/3 Chickkaharadanahalli, Pampapthi Road, Raghavendra Nagar Near - Ashokpuram Railway Station Backside Srirampura Mysuru -->
+             Madanayakanahalli,near police station, banglore-562162
+        </p>
+
+        <p>
+          <i class="fa fa-phone text-warning"></i>
+          <a href="tel:+918317441808" style="color:white; text-decoration:none;">
+            +91 8317441808
+          </a>
+        </p>
+
+        <p>
+          <i class="fa fa-envelope text-warning"></i>
+          <a href="mailto:AKtoursandtravels@gmail.com" style="color:white; text-decoration:none;">
+            AKtourstravels07@gmail.com
+          </a>
+        </p>
+
+        <!-- ACTION BUTTONS -->
+        <!-- <div style="margin-top:25px; display:flex; flex-direction:column; gap:10px;"> -->
+          <!-- Directions -->
+          <!-- <a href="https://maps.app.goo.gl/qGbN86onHVzcCCCt9?g_st=aw"
+             target="_blank"
+             style="padding:10px; background:#00bcd4; color:white; text-align:center; border-radius:8px; text-decoration:none;">
+             📍 Get Directions
+          </a> -->
+
+          <!-- Call -->
+          <a href="tel:+918317441808"
+             style="padding:10px; background:#22c55e; color:white; text-align:center; border-radius:8px; text-decoration:none;">
+             📞 Call Now
+          </a>
+          <br>
+          <br>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/918317441808"
+             target="_blank"
+             style="padding:10px; background:#25D366; color:white; text-align:center; border-radius:8px; text-decoration:none;">
+             💬 WhatsApp Us
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: MAP -->
+      <!-- <div class="col-md-7 p-0">
+        <iframe
+          src="https://www.google.com/maps?q=7JGM%2BVP3,+Kuvempu+Nagar+2nd+Stage,+Kuvempu+Nagara,+Mysuru,+Karnataka+570034&z=19&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0; min-height:400px;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div> -->
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- footer -->
+  <footer>
+    <p>© <span id="year"></span> <a href='/' target='_blank'><button
+          style="font-size: 13px;background: linear-gradient(90deg, #00ffff, #00bcd4, #0077ff);-webkit-background-clip: text;color: transparent; border: none;">AK
+          Tours & Travels</button></a> All Rights Reserved <br>
+      <!-- Atelier by <a target="_blank" href="https://sharatechnovate.com/"><button
+          style="font-size: 15px;background: linear-gradient(90deg, #00ffff, #00bcd4, #0077ff);-webkit-background-clip: text;color: transparent; border: none;">ShaRa
+          Technovate</button></a></p> -->
+
+  </footer>
+
+  <!-- Floating WhatsApp & Call Buttons -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/918317441808" target="_blank" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <!-- <a href="tel:+918317441808" class="call" title="Call Now"><i class="fa fa-phone"></i></a> -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="./script.js"></script>
+  <script>AOS.init();
+    // Auto-update year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

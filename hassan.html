@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hassan - AK Tours and Travels</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="shortcut icon" href="./fa8ac7c4-98cd-48c4-a129-f15012583b3b.png"
+    type="image/x-icon">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-warning" href="https://svbstoursandtravels.netlify.app/">
+        <!-- <img src="https://res.cloudinary.com/svbs/image/upload/v1771502248/SVBS-Logo_cmgae9.png" height="50px"
+          width="250px" alt="" style="border-radius: 10px;"> -->
+          <img src="./fa8ac7c4-98cd-48c4-a129-f15012583b3b.png" height="80px"
+          width="200px" alt="" style="border-radius: 10px;">
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class='nav-link' href='/'>Home</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#tours'>Tours</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#inside-places'>Mysuru-Places</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#outside-places'>Mysuru-Outside-Places</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#vehicles'>Vehicles</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#about'>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- tours -->
+  <section id="tours">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Hassan Packages</h2>
+      </div>
+      <!-- <h4 class="text-center text-warning mb-4">Hassan</h4> -->
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changeit" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Ishwara Temple </h5>
+                It is famous for its unique star-shaped design and carvings.
+                The temple is an important historical monument.
+              </div>
+            </div>
+            <h5>Ishwara Temple</h5>
+            <p> A beautiful star-shaped Hoysala temple.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangeit = document.querySelector('.auto-changeit');
+            const autoChangeImagesit = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773664149/Ishwara_Temple_Arasikere-4_muni6a.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664149/ishwara-temple-arsikere-5_wnc5i9.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664148/Ishwara_Temple_Arasikere-3_nwwr6i.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664148/Ishwara_Temple_Arasikere-2_k0krhj.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664148/ishvara-temple-arasikere-hassan-1_pfvqi4.webp'
+            ];
+            let autoChangeIndexit = 0;
+            // Set first image immediately
+            autoChangeit.src = autoChangeImagesit[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexit = (autoChangeIndexit + 1) % autoChangeImagesit.length;
+              autoChangeit.setAttribute("src", autoChangeImagesit[autoChangeIndexit]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changejt" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Jenukal Temple </h5> located on a hill near Arasikere town.
+                It is a peaceful place surrounded by natural scenery.
+                Visitors enjoy trekking and panoramic views from the hill.
+              </div>
+            </div>
+            <h5>Jenukal Temple</h5>
+            <p> A small temple in a serene hill area.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangejt = document.querySelector('.auto-changejt');
+            const autoChangeImagesjt = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773664151/jenukal_temple_arsikere-5_eycopk.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664151/jenukal_temple_arsikere-4_qizkml.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664150/jenukal_temple_arsikere-3_v5vvhm.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664149/jenukal_temple_arsikere-2_cewco5.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664149/jenukal_temple_arsikere-1_hahwv4.jpg'
+            ];
+            let autoChangeIndexjt = 0;
+            // Set first image immediately
+            autoChangejt.src = autoChangeImagesjt[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexjt = (autoChangeIndexjt + 1) % autoChangeImagesjt.length;
+              autoChangejt.setAttribute("src", autoChangeImagesjt[autoChangeIndexjt]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changeht" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Hasanamba Temple </h5>Is a famous temple dedicated to Goddess Hasanamba.
+                The temple opens only once a year during a special festival.
+                Thousands of devotees visit during this time
+              </div>
+            </div>
+            <h5>Hasanamba Temple</h5>
+            <p>A sacred temple open only once a year.
+            </p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangeht = document.querySelector('.auto-changeht');
+            const autoChangeImagesht = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773664147/Hasanmba_temple-Hassan-5_jwuql4.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664147/Hasanamba-Temple-hassan-4_xhd1az.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664146/hasanamba-temple-hassan-3_as9o07.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664145/hasanamba-temple-Hassan-2_dexuye.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664145/hasanamba-temple-hassan-1_u6ffg4.webp'
+            ];
+            let autoChangeIndexht = 0;
+            // Set first image immediately
+            autoChangeht.src = autoChangeImagesht[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexht = (autoChangeIndexht + 1) % autoChangeImagesht.length;
+              autoChangeht.setAttribute("src", autoChangeImagesht[autoChangeIndexht]);
+            }, 2000);
+          </script>
+        </div>
+
+        
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changemm" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Male Malleshwara </h5>It is located on Seegegudda hill near Hassan.
+                The temple is dedicated to Lord Shiva.
+                It offers beautiful views of the surrounding landscape.
+
+              </div>
+            </div>
+            <h5>Male Malleshwara Gudi Seegegudda</h5>
+            <p>A peaceful temple located on a hilltop. </p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangemm = document.querySelector('.auto-changemm');
+            const autoChangeImagesmm = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773664158/male_malleshwara_gudi-seegegudda-hassan-4_zyl5uo.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664157/male_malleshwara_gudi_-seegegudda-hassan-1_cev1zk.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664158/male_malleshwara_gudi_seegegudda-hassan-2_joy1uo.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664159/male_malleshwara_gudi-seegegudda-hassan-5_ev7eyq.jpg'
+
+            ];
+            let autoChangeIndexmm = 0;
+            // Set first image immediately
+            autoChangemm.src = autoChangeImagesmm[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexmm = (autoChangeIndexmm + 1) % autoChangeImagesmm.length;
+              autoChangemm.setAttribute("src", autoChangeImagesmm[autoChangeIndexmm]);
+            }, 2000);
+          </script>
+        </div>
+
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changepg" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Pandavar Gudda </h5> A historic hill believed to be linked with the Pandavas.
+                It is surrounded by natural beauty and scenic landscapes.
+                The place is also popular for trekking.
+              </div>
+            </div>
+            <h5>Pandavar Gudda</h5>
+            <p> A historic hill linked to the Pandavas.
+            </p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangepg = document.querySelector('.auto-changepg');
+            const autoChangeImagespg = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773664176/Pandavara_Gudda_Sakleshpur_-_Trekking-5_r8nyjt.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664175/Pandavara_Gudda_Sakleshpur_-_Trekking-4_czuoyz.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664175/Pandavar-Gudda-Sakleshpur-3_csapic.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664175/Pandavar_Gudda-Sakleshpur-2_uu5blx.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664174/Pandavar_Gudda-Sakleshpur-1_grj2uc.jpg'
+
+
+
+            ];
+            let autoChangeIndexpg = 0;
+            // Set first image immediately
+            autoChangepg.src = autoChangeImagespg[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexpg = (autoChangeIndexpg + 1) % autoChangeImagespg.length;
+              autoChangepg.setAttribute("src", autoChangeImagespg[autoChangeIndexpg]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changegd" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Gorur Dam</h5>It is built across the Hemavathi River near Hassan.
+                It provides irrigation water to nearby agricultural areas.
+                The reservoir also offers scenic views for visitors.
+
+              </div>
+            </div>
+            <h5>Gorur Dam</h5>
+            <p> A scenic dam surrounded by calm nature. </p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangegd = document.querySelector('.auto-changegd');
+            const autoChangeImagesgd = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773664144/gorur_dam_hemavathidam_-4_qvqiiy.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664143/Gorur_dam_hemavathidam_-5_bnpeoa.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664142/Gorur_dam_hemavathidam_-3_rlpx43.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664141/Gorur_dam_hemavathidam_-2_z0efgb.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664141/Gorur_dam_hemavathidam_-1_yimdu1.jpg'
+
+
+
+            ];
+            let autoChangeIndexgd = 0;
+            // Set first image immediately
+            autoChangegd.src = autoChangeImagesgd[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexgd = (autoChangeIndexgd + 1) % autoChangeImagesgd.length;
+              autoChangegd.setAttribute("src", autoChangeImagesgd[autoChangeIndexgd]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changesr" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Sri Ranganathaswamy Temple </h5> Located near Gorur Dam.
+                The temple is dedicated to Lord Vishnu.
+                It is a peaceful spiritual place visited by many devotees.
+              </div>
+            </div>
+            <h5>Sri Ranganathaswamy Temple </h5>
+            <p> A sacred temple near the Hemavathi River. </p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangesr = document.querySelector('.auto-changesr');
+            const autoChangeImagessr = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773664184/Sri_Ranganathaswamy_Temple_Gorur_-5_qeggug.png',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664184/Sri_Ranganathaswamy_Temple_Gorur_-4_g88n99.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664182/Sri_Ranganathaswamy_Temple_Gorur_-3_ejcgu1.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664182/Sri_Ranganathaswamy_Temple_Gorur_-2_kqcwtm.jpg',
+
+
+
+
+            ];
+            let autoChangeIndexsr = 0;
+            // Set first image immediately
+            autoChangesr.src = autoChangeImagessr[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexsr = (autoChangeIndexsr + 1) % autoChangeImagessr.length;
+              autoChangesr.setAttribute("src", autoChangeImagessr[autoChangeIndexsr]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changert" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Ramanathapura Temple</h5>Is a historic temple town located on the banks of the Kaveri River.
+                The town has several ancient temples with beautiful architecture.
+                It is a peaceful pilgrimage destination.
+
+              </div>
+            </div>
+            <h5>Ramanathapura Temple</h5>
+            <p> Ancient temples on the banks of the Cauvery. </p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangert = document.querySelector('.auto-changert');
+            const autoChangeImagesrt = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773664178/ramanathpura-subramanya_swamy_temple-5_w7du0l.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664177/ramanathapura-subramanya_swamy_temple-4_mfp1zi.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664177/Ramanathapura-Subramanya_swamy_temple-3_vwj3g6.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664177/ramanathapura-subramanya_swamy_temple-2_z6s76o.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664176/ramanathapura-subramanya_swamy_temple-1_wanog4.jpg'
+
+
+
+            ];
+            let autoChangeIndexrt = 0;
+            // Set first image immediately
+            autoChangert.src = autoChangeImagesrt[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexrt = (autoChangeIndexrt + 1) % autoChangeImagesrt.length;
+              autoChangert.setAttribute("src", autoChangeImagesrt[autoChangeIndexrt]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changect" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5> Chennakeshava Temple </h5> A famous Hoysala temple dedicated to Lord Vishnu.
+                It is known for its detailed stone carvings and beautiful architecture.
+                The temple is an important historical monument in Karnataka.
+              </div>
+            </div>
+            <h5>Chennakeshava Temple</h5>
+            <p> A masterpiece of Hoysala temple architecture.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangect = document.querySelector('.auto-changect');
+            const autoChangeImagesct = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773664144/chennakeshava-temple-belur-4_mowzk0.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664142/chennakeshava-temple-belur-5_a5iv5g.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664140/Chennakesava_Temple_Belur-1_c0hktu.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664140/chennakeshava-temple-belur-3_rma9va.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664140/chennakeshava-temple-belur-2_hti6ol.jpg'
+            ];
+            let autoChangeIndexct = 0;
+            // Set first image immediately
+            autoChangect.src = autoChangeImagesct[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexct = (autoChangeIndexct + 1) % autoChangeImagesct.length;
+              autoChangect.setAttribute("src", autoChangeImagesct[autoChangeIndexct]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changekc" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Kappe Chennigaraya Temple </h5>It is located inside the Belur temple complex.
+                It is known for its beautiful Hoysala architecture.
+                The temple features detailed sculptures and carvings.
+
+              </div>
+            </div>
+            <h5>Kappe Chennigaraya Temple</h5>
+            <p> A masterpiece of Hoysala temple architecture.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangekc = document.querySelector('.auto-changekc');
+            const autoChangeImageskc = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773664155/Kappe_Chennigaraya_Temple-5_ymhoju.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664155/Kappe_Chennigaraya_Temple-4_v2spow.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664154/Kappe_Chennigaraya_Temple-3_axqsag.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664154/Kappe_Chennigaraya_Temple-2_tduphi.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664153/Kappe_Chennigaraya_Temple-1_n8hien.webp'
+
+
+
+            ];
+            let autoChangeIndexkc = 0;
+            // Set first image immediately
+            autoChangekc.src = autoChangeImageskc[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexkc = (autoChangeIndexkc + 1) % autoChangeImageskc.length;
+              autoChangekc.setAttribute("src", autoChangeImageskc[autoChangeIndexkc]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changehth" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Hoysaleswara Temple Halebidu</h5>
+                Halebidu Hoysaleswara Temple is a masterpiece of Hoysala architecture.
+                The temple is famous for its intricate stone carvings and sculptures.
+                It is one of the most important heritage sites in Karnataka.
+
+              </div>
+            </div>
+            <h5>Hoysaleswara Temple Halebidu</h5>
+            <p>A historic temple famous for detailed carvings.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangehth = document.querySelector('.auto-changehth');
+            const autoChangeImageshth = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773664144/Halebidu-hoysaleswara_temple-3_naqn89.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664144/Halebidu-Hoysaleswara-Temple-5_hpncha.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664144/Halebidu-Hoysaleshwara-Temple-1_nwuf7r.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664143/Halebidu-Hoysaleswara-Temple-4_rzr1tx.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664143/Halebidu-Hoysaleswara_Temple-2_cxth9b.jpg'
+
+
+
+            ];
+            let autoChangeIndexhth = 0;
+            // Set first image immediately
+            autoChangehth.src = autoChangeImageshth[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexhth = (autoChangeIndexhth + 1) % autoChangeImageshth.length;
+              autoChangehth.setAttribute("src", autoChangeImageshth[autoChangeIndexhth]);
+            }, 2000);
+          </script>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changelnt" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Lakshmi Narasimha Temple</h5>
+                Lakshmi Narasimha Temple at Nuggehalli is a historic Hoysala temple.
+                It is famous for its detailed stone sculptures and artistic design.
+                The temple reflects the rich culture of the Hoysala period.
+              </div>
+            </div>
+            <h5>Lakshmi Narasimha Temple</h5>
+            <p> A historic temple with intricate sculptures.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangelnt = document.querySelector('.auto-changelnt');
+            const autoChangeImageslnt = [
+              'https://www.karnataka.com/wp-content/uploads/2011/07/Lakshminarasimha_temple_at_Nuggehalli_north_western_closeup_view.jpg',
+              'https://www.holidify.com/images/cmsuploads/compressed/Lakshmi_Narasimha_temple_at_Nuggehalli_20190116142237.JPG',
+              'https://www.tirthayatra.org/wp-content/uploads/2023/08/PXL_20201101_085352393-scaled.jpg',
+              'https://im.whatshot.in/img/2021/Nov/1821px-lakshminarasimha-temple-at-nuggehalli-in-hassan-district-southwestern-view-cropped-1637668066.jpg'
+
+
+
+            ];
+            let autoChangeIndexlnt = 0;
+            // Set first image immediately
+            autoChangelnt.src = autoChangeImageslnt[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexlnt = (autoChangeIndexlnt + 1) % autoChangeImageslnt.length;
+              autoChangelnt.setAttribute("src", autoChangeImageslnt[autoChangeIndexlnt]);
+            }, 2000);
+          </script>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changes" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Shettihalli Rosary Church</h5>
+                Shettihalli Church is a historic Gothic-style church near Hassan.
+                It is partially submerged in water during the monsoon season.
+                The ruins attract many tourists and photographers.
+
+              </div>
+            </div>
+            <h5>Shettihalli Rosary Church</h5>
+            <p>A beautiful Gothic church partly underwater.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChanges = document.querySelector('.auto-changes');
+            const autoChangeImagess = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773664182/Shetti_halli_church-2_k9koyz.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664181/Shettihalli_church-5_pzquwo.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664181/shettihalli_church-3_dkouox.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664181/Shettihalli_Church-4_nj1ery.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664180/Shetti_halli_church-1_qgimdl.webp'
+
+
+
+            ];
+            let autoChangeIndexs = 0;
+            // Set first image immediately
+            autoChanges.src = autoChangeImagess[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexs = (autoChangeIndexs + 1) % autoChangeImagess.length;
+              autoChanges.setAttribute("src", autoChangeImagess[autoChangeIndexs]);
+            }, 2000);
+          </script>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changemf" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Manjarabad Fort</h5>
+                Manjarabad Fort is a star-shaped fort built by Tipu Sultan.It is located on a hill near Sakleshpur.
+                The fort offers panoramic views of the Western Ghats.
+
+              </div>
+            </div>
+            <h5>Manjarabad Fort</h5>
+            <p>A unique star-shaped fort built by Tipu Sultan.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangemf = document.querySelector('.auto-changemf');
+            const autoChangeImagesmf = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773664174/Manjarabad_Fort-3_aop6ea.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664174/Manjrabad_Fort-5_xaueuo.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664174/ManjarabadFort-4_cqdxxf.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664174/Manjarabad_Fort-2_qzr6af.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664163/Manjarabad_Fort-1_s26bb5.jpg'
+
+
+            ];
+            let autoChangeIndexmf = 0;
+            // Set first image immediately
+            autoChangemf.src = autoChangeImagesmf[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexmf = (autoChangeIndexmf + 1) % autoChangeImagesmf.length;
+              autoChangemf.setAttribute("src", autoChangeImagesmf[autoChangeIndexmf]);
+            }, 2000);
+          </script>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changebb" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Bettada Byraveshwara Temple</h5>
+                Bettada Byraveshwara Temple is located on a scenic hill near Sakleshpur.It offers breathtaking views of
+                the Western Ghats and surrounding valleys.
+                The temple is also a popular trekking destination.
+
+              </div>
+            </div>
+            <h5>Bettada Byraveshwara Temple</h5>
+            <p>A peaceful hilltop temple with stunning views.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangebb = document.querySelector('.auto-changebb');
+            const autoChangeImagesbb = [
+              'https://rohini.us/wp-content/uploads/2022/02/Bettada-Bhairaveshwara-Temple-Photos.jpg',
+              'https://imvoyager.com/wp-content/uploads/2023/04/Bettada-Byraveshwara-Temple-Sakleshpur-SM.jpg',
+              'http://mycameralog.com/wp-content/uploads/2023/07/IMG_7367-768x512.jpg',
+              'https://famoustemplesofindia.com/wp-content/uploads/2025/07/bettada-byraveshwara-temple-1-1024x576.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664122/Bettada_Byraveshwara_Temple-4_nzccvo.jpg'
+
+
+
+            ];
+            let autoChangeIndexbb = 0;
+            // Set first image immediately
+            autoChangebb.src = autoChangeImagesbb[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexbb = (autoChangeIndexbb + 1) % autoChangeImagesbb.length;
+              autoChangebb.setAttribute("src", autoChangeImagesbb[autoChangeIndexbb]);
+            }, 2000);
+          </script>
+        </div>
+
+
+        <!-- <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changesrb" src=""> -->
+            <!-- Overlay Content -->
+            <!-- <div class="overlay">
+              <div>
+                <h5>Sakleshpur Railway Bridge</h5>
+                The Sakleshpur Railway Bridge is part of the scenic railway route in the Western Ghats.It is surrounded
+                by hills, forests, and valleys.
+                The location is popular among trekkers and photographers.
+
+              </div>
+            </div>
+            <h5>Sakleshpur Railway Bridge</h5>
+            <p>A scenic railway bridge through green hills.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangesrb = document.querySelector('.auto-changesrb');
+            const autoChangeImagessrb = [
+              'https://i.ytimg.com/vi/sZffwsCNisI/maxresdefault.jpg','https://www.youtube.com/watch?v=-izOUElRuzA','https://www.google.com/imgres?q=sakleshpur%20railway%20bridge%20images&imgurl=https%3A%2F%2Fmookanana.com%2Fimages%2Fsakleshpur%2Fyedakumeri%2Fyedakumeri-railway-track.webp&imgrefurl=https%3A%2F%2Fmookanana.com%2Fyedakumeri-railway-bridge-track.php&docid=Pt9s5xFtPaB_9M&tbnid=k7S97TFRgG6eZM&vet=12ahUKEwja36e99LyUAxWOSWwGHXOqKDcQnPAOegQIHxAB..i&w=860&h=571&hcb=2&ved=2ahUKEwja36e99LyUAxWOSWwGHXOqKDcQnPAOegQIHxAB',
+              'https://www.google.com/imgres?q=sakleshpur%20railway%20bridge%20images&imgurl=https%3A%2F%2Fstatic2.tripoto.com%2Fmedia%2Ffilter%2Ftst%2Fimg%2FOgData%2F1448692998_1448641663_img_4069.jpg&imgrefurl=https%3A%2F%2Fwww.tripoto.com%2Fhassan%2Ftrips%2Fwanna-end-up-in-prison-try-this-trek-5658633885f43&docid=yqOMXDBWfQEKqM&tbnid=v2nGfa_YKT7-8M&vet=12ahUKEwja36e99LyUAxWOSWwGHXOqKDcQnPAOegQIIxAB..i&w=960&h=640&hcb=2&ved=2ahUKEwja36e99LyUAxWOSWwGHXOqKDcQnPAOegQIIxAB', -->
+
+              <!-- // 'https://photos.beontheroad.com/img/s/v-10/p3514131443-4.jpg',
+              // 'https://live.staticflickr.com/8435/8018334150_daa36c319f_b.jpg',
+              // 'https://i.ytimg.com/vi/-izOUElRuzA/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGDMgZSgsMA8=&rs=AOn4CLBRfjmzlUrIVK8p_ffgKI1uxTHRnQ' -->
+
+
+        <!-- //     ];
+        //     let autoChangeIndexsrb = 0;
+        //     // Set first image immediately
+        //     autoChangesrb.src = autoChangeImagessrb[0];
+        //     // Start interval
+        //     setInterval(() => {
+        //       autoChangeIndexsrb = (autoChangeIndexsrb + 1) % autoChangeImagessrb.length;
+        //       autoChangesrb.setAttribute("src", autoChangeImagessrb[autoChangeIndexsrb]);
+        //     }, 2000); -->
+        <!-- //   </script>
+        // </div> -->
+
+
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changejg" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Jenukal Gudda</h5>
+                Jenukal Gudda is one of the highest peaks in the Western Ghats.It offers amazing views of forests and
+                mountains.
+                The peak is popular for trekking and adventure activities.
+
+              </div>
+            </div>
+            <h5>Jenukal Gudda</h5>
+            <p>A scenic trekking peak in the Western Ghats.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangejg = document.querySelector('.auto-changejg');
+            const autoChangeImagesjg = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773664152/Jenukallu_Gudda_yellapura-4_erjfjw.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664153/Jenukallu_Gudda_yellapura-5_iwqfxm.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664152/Jenukallu_Gudda_yallapura-2_uxadot.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664152/Jenukallu_Gudda_yallapura-1_wwcvgw.jpg'
+
+
+
+            ];
+            let autoChangeIndexjg = 0;
+            // Set first image immediately
+            autoChangejg.src = autoChangeImagesjg[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexjg = (autoChangeIndexjg + 1) % autoChangeImagesjg.length;
+              autoChangejg.setAttribute("src", autoChangeImagesjg[autoChangeIndexjg]);
+            }, 2000);
+          </script>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changebg" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Bisle Ghat Viewpoint</h5>
+                Bisle Ghat Viewpoint is one of the most beautiful viewpoints in the Western Ghats.Visitors can see lush
+                green forests and mountain ranges.
+                It is a perfect place for nature lovers and photographers.
+
+              </div>
+            </div>
+            <h5>Bisle Ghat Viewpoint</h5>
+            <p>A breathtaking viewpoint in the Western Ghats.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangebg = document.querySelector('.auto-changebg');
+            const autoChangeImagesbg = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773664122/Bisle_Ghat_Sakleshpur-2_d3cqeq.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664139/Bisle-Ghat-Sakleshpur-5_wzeup0.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664123/Bisle-Ghat-Sakleshpur-3_q7juqc.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664123/Bisle-ghat-sakleshpur-4_pnhj63.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664123/Bisle_-Ghat-Sakleshpur-1_ptjjdk.jpg'
+
+
+
+
+            ];
+            let autoChangeIndexbg = 0;
+            // Set first image immediately
+            autoChangebg.src = autoChangeImagesbg[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexbg = (autoChangeIndexbg + 1) % autoChangeImagesbg.length;
+              autoChangebg.setAttribute("src", autoChangeImagesbg[autoChangeIndexbg]);
+            }, 2000);
+          </script>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changem" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Mallalli Falls</h5>
+                Mallalli Falls is one of the largest waterfalls in the Western Ghats.It is surrounded by dense forests
+                and hills.
+                The waterfall looks most beautiful during the monsoon season.
+
+              </div>
+            </div>
+            <h5>Mallalli Falls</h5>
+            <p>A spectacular waterfall surrounded by greenery.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangem = document.querySelector('.auto-changem');
+            const autoChangeImagesm = [
+              'https://www.sakleshpurstays.in/wp-content/uploads/2020/01/Mallali-Falls-Near-Sakleshpur.jpg',
+              'https://media1.thrillophilia.com/filestore/fletvuxfo5ekkcbe8mzyesdw71jz_shutterstock_1489258019.jpg',
+              'https://d223iynz9gx8rj.cloudfront.net/uploads/h4-mallalli-falls-is-among-the-tallest-in-south-india-1710314632.jpg',
+              'https://www.team-bhp.com/forum/attachments/travelogues/166280d1248785637-weekend-trip-mallalli-falls-dsc04726.jpg'
+
+
+
+            ];
+            let autoChangeIndexm = 0;
+            // Set first image immediately
+            autoChangem.src = autoChangeImagesm[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexm = (autoChangeIndexm + 1) % autoChangeImagesm.length;
+              autoChangem.setAttribute("src", autoChangeImagesm[autoChangeIndexm]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="explore">
+          <a href='./outside.html'><button class="cta-more-btn">Explore Mysuru-outside places</button></a>
+        </div>
+  </section>
+  <!-- contact -->
+  <!-- CONTACT SECTION PREMIUM -->
+<section id="contact">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title text-center">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Contact us for bookings and enquiries.</p>
+    </div>
+
+    <div class="row mt-4" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius:15px; overflow:hidden;">
+
+      <!-- LEFT: CONTACT DETAILS -->
+      <div class="col-md-5 p-4" style="background:#0f172a; color:white;">
+        
+        <h4 style="margin-bottom:20px;">📍 Our Location</h4>
+
+        <p>
+          <i class="fa fa-map text-warning"></i>
+          <!-- Kuvempu Nagar 2nd Stage,<br>
+          Mysuru, Karnataka -->
+            <!-- 476/3 Chickkaharadanahalli, Pampapthi Road, Raghavendra Nagar Near - Ashokpuram Railway Station Backside Srirampura Mysuru -->
+             Madanayakanahalli,near police station, banglore-562162
+        </p>
+
+        <p>
+          <i class="fa fa-phone text-warning"></i>
+          <a href="tel:+918317441808" style="color:white; text-decoration:none;">
+            +91 8317441808
+          </a>
+        </p>
+
+        <p>
+          <i class="fa fa-envelope text-warning"></i>
+          <a href="mailto:AKtoursandtravels@gmail.com" style="color:white; text-decoration:none;">
+            AKtourstravels07@gmail.com
+          </a>
+        </p>
+
+        <!-- ACTION BUTTONS -->
+        <!-- <div style="margin-top:25px; display:flex; flex-direction:column; gap:10px;"> -->
+          <!-- Directions -->
+          <!-- <a href="https://maps.app.goo.gl/qGbN86onHVzcCCCt9?g_st=aw"
+             target="_blank"
+             style="padding:10px; background:#00bcd4; color:white; text-align:center; border-radius:8px; text-decoration:none;">
+             📍 Get Directions
+          </a> -->
+
+          <!-- Call -->
+          <a href="tel:+918317441808"
+             style="padding:10px; background:#22c55e; color:white; text-align:center; border-radius:8px; text-decoration:none;">
+             📞 Call Now
+          </a>
+          <br>
+          <br>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/918317441808"
+             target="_blank"
+             style="padding:10px; background:#25D366; color:white; text-align:center; border-radius:8px; text-decoration:none;">
+             💬 WhatsApp Us
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: MAP -->
+      <!-- <div class="col-md-7 p-0">
+        <iframe
+          src="https://www.google.com/maps?q=7JGM%2BVP3,+Kuvempu+Nagar+2nd+Stage,+Kuvempu+Nagara,+Mysuru,+Karnataka+570034&z=19&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0; min-height:400px;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div> -->
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- footer -->
+  <footer>
+    <p>© <span id="year"></span> <a href='/' target='_blank'><button
+          style="font-size: 13px;background: linear-gradient(90deg, #00ffff, #00bcd4, #0077ff);-webkit-background-clip: text;color: transparent; border: none;">AK
+          Tours & Travels</button></a> All Rights Reserved <br>
+      <!-- Atelier by <a target="_blank" href="https://sharatechnovate.com/"><button
+          style="font-size: 15px;background: linear-gradient(90deg, #00ffff, #00bcd4, #0077ff);-webkit-background-clip: text;color: transparent; border: none;">ShaRa
+          Technovate</button></a></p> -->
+
+  </footer>
+
+  <!-- Floating WhatsApp & Call Buttons -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/918317441808" target="_blank" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <!-- <a href="tel:+918317441808" class="call" title="Call Now"><i class="fa fa-phone"></i></a> -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="./script.js"></script>
+  <script>AOS.init();
+    // Auto-update year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

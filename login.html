@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0" />
+
+  <title>Login - AK Tours</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(135deg,
+          #0f172a,
+          #1e293b);
+
+      height: 100vh;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      font-family: Arial;
+    }
+
+    .login-box {
+      width: 350px;
+
+      background: white;
+
+      padding: 30px;
+
+      border-radius: 15px;
+
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+
+      margin-bottom: 20px;
+
+      color: #0f172a;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-box">
+
+    <h2>AK Tours Login</h2>
+
+    <input
+      type="email"
+      id="email"
+      class="form-control mb-3"
+      placeholder="Enter Email">
+
+    <input
+      type="password"
+      id="password"
+      class="form-control mb-3"
+      placeholder="Enter Password">
+
+    <button
+      id="registerBtn"
+      class="btn btn-success w-100 mb-2">
+      Register
+    </button>
+
+    <button
+      id="loginBtn"
+      class="btn btn-primary w-100">
+      Login
+    </button>
+
+  </div>
+
+  <script type="module"
+    src="./login.js"></script>
+
+</body>
+
+</html>

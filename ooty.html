@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ooty Places - SVBS Tours and Travels</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="shortcut icon" href="https://res.cloudinary.com/svbs/image/upload/v1771502248/SVBS-Logo_cmgae9.png"
+    type="image/x-icon">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-warning" href="https://svbstoursandtravels.netlify.app/">
+        <img src="https://res.cloudinary.com/svbs/image/upload/v1771502248/SVBS-Logo_cmgae9.png" height="50px"
+          width="250px" alt="" style="border-radius: 10px;">
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class='nav-link' href='/'>Home</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#tours'>Tours</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#inside-places'>Mysuru-Places</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#outside-places'>Mysuru-Outside-Places</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#vehicles'>Vehicles</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#about'>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- tours -->
+  <section id="tours">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Ooty Packages</h2>
+      </div>
+      <!-- <h4 class="text-center text-warning mb-4">Ooty</h4> -->
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changerg" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Rose Garden</h5>
+                The Government Rose Garden is one of the largest rose gardens in India, featuring thousands of rose varieties. Spread across beautiful terraces, it offers colorful views and a pleasant walking experience. It is a perfect place for photography and relaxation.
+            </div>
+            </div>
+            <h5>Rose Garden</h5>
+            <p>Beautiful terraced garden with thousands of roses 🌹</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangerg = document.querySelector('.auto-changerg');
+            const autoChangeImagesrg = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401744/rose-garden-ooty1_tu4tcy.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401744/rose-garden_oichjy.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401728/rose_garden_3_gg9dht.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401725/rose_garden_4_fyrc2n.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401723/rose_garden_6_zwgkwa.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401720/rose_garden_5_ryjbay.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401720/rose_garden_1_d43o4c.jpg'
+            ];
+            let autoChangeIndexrg = 0;
+            // Set first image immediately
+            autoChangerg.src = autoChangeImagesrg[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexrg = (autoChangeIndexrg + 1) % autoChangeImagesrg.length;
+              autoChangerg.setAttribute("src", autoChangeImagesrg[autoChangeIndexrg]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changeot" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Ooty Tea Factory and Tea Museum</h5>
+                The Tea Factory and Museum showcases the complete process of tea manufacturing, from leaf plucking to packaging. Visitors can learn about the history of Nilgiri tea and taste fresh tea varieties. Nearby chocolate shops and museums sell delicious homemade chocolates.
+
+              </div>
+            </div>
+            <h5>Ooty Tea Factory and Tea Museum</h5>
+            <p>Learn traditional Nilgiri tea manufacturing process 🍃</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangeot = document.querySelector('.auto-changeot');
+            const autoChangeImagesot = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401727/tea_factory_and_chocolate_museum5_jghhul.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401733/tea_factory_and_chocolate_museum4_ico3pc.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401727/tea_factory_and_chocolate_museum_nmpxwd.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401727/tea_factory_and_chocolate_museum2_gf1fih.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401726/tea_factory_and_chocolate_museum3_hblt3n.jpg'
+            ];
+            let autoChangeIndexot = 0;
+            // Set first image immediately
+            autoChangeot.src = autoChangeImagesot[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexot = (autoChangeIndexot + 1) % autoChangeImagesot.length;
+              autoChangeot.setAttribute("src", autoChangeImagesot[autoChangeIndexot]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changepf" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Pykara Falls</h5>
+                Pykara Falls is a scenic waterfall surrounded by dense forests and natural beauty. The cascading water creates a peaceful and refreshing atmosphere. It is a popular picnic and photography spot.
+              </div>
+            </div>
+            <h5>Pykara Falls</h5>
+            <p>Scenic waterfall surrounded by dense forests 💧</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangepf = document.querySelector('.auto-changepf');
+            const autoChangeImagespf = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401738/Pykara-Lake-1200x800_xwwpl0.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401714/pykara_falls_and_lakes1_iloqy6.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401714/pykara_falls_and_lakes4_are2th.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401708/pykara_falls_and_lakes3_zngay8.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401702/pykara_falls_and_lakes2_umv6mn.jpg'
+            ];
+            let autoChangeIndexpf = 0;
+            // Set first image immediately
+            autoChangepf.src = autoChangeImagespf[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexpf = (autoChangeIndexpf + 1) % autoChangeImagespf.length;
+              autoChangepf.setAttribute("src", autoChangeImagespf[autoChangeIndexpf]);
+            }, 2000);
+          </script>
+        </div>
+        <!-- <div class="row g-4"> -->
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changenm" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Nilgiri Mountain Railway</h5>
+                The Nilgiri Mountain Railway is a UNESCO World Heritage toy train that runs through tunnels, bridges, and misty hills. The slow journey offers breathtaking views of the Nilgiri mountains. It is one of the most memorable experiences in Ooty.
+
+              </div>
+            </div>
+            <h5>Nilgiri Mountain Railway</h5>
+            <p>UNESCO heritage toy train through misty hills 🚂</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangenm = document.querySelector('.auto-changenm');
+            const autoChangeImagesnm = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401680/nilgiri_mountain_railway3_pzd3lw.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401678/nilgiri_mountain_railway5_podq8e.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401677/nilgiri_mountain_railway4_hy5sk3.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401675/nilgiri_mountain_railway2_kjajmy.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401674/nilgiri_mountain_railway1_cujxqf.jpg'
+            ];
+            let autoChangeIndexnm = 0;
+            // Set first image immediately
+            autoChangenm.src = autoChangeImagesnm[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexnm = (autoChangeIndexnm + 1) % autoChangeImagesnm.length;
+              autoChangenm.setAttribute("src", autoChangeImagesnm[autoChangeIndexnm]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changemr" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Moyar River</h5>
+                The Moyar River flows through deep valleys and thick forests of the Nilgiris. It supports rich wildlife and adds beauty to the region’s landscape. The river area is calm and scenic.
+              </div>
+            </div>
+            <h5>Moyar River</h5>
+            <p>River flowing through forests and deep valleys 🌿</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangemr = document.querySelector('.auto-changemr');
+            const autoChangeImagesmr = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401737/moyar-river-1200x800_mkx06z.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401679/moyar_river_2_vcyqpn.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401673/moyar_river_3_oskqlp.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401668/moyar_river_4_mujw1u.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401667/moyar_river_1_he3cvp.jpg'
+            ];
+            let autoChangeIndexmr = 0;
+            // Set first image immediately
+            autoChangemr.src = autoChangeImagesmr[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexmr = (autoChangeIndexmr + 1) % autoChangeImagesmr.length;
+              autoChangemr.setAttribute("src", autoChangeImagesmr[autoChangeIndexmr]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changeel" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Emerald Lake</h5>
+                Emerald Lake is a quiet and less crowded destination surrounded by tea plantations. The serene environment makes it ideal for nature lovers. It is perfect for peaceful walks and photography.
+              </div>
+            </div>
+            <h5>Emerald Lake</h5>
+            <p>Quiet lake surrounded by lush tea plantations 🌄</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangeel = document.querySelector('.auto-changeel');
+            const autoChangeImagesel = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401658/emerald_lake_5_aeaujn.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401656/emerald_lake_4_ohzsht.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401656/emerald_lake_3_ytqsve.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401656/emerald_lake_2_fguqsm.jpg',
+              'https://www.mysoretourism.org.in/images/v2/places-to-visit/mysore-maharaja-palace-header-mysore-tourism.jpg'
+            ];
+            let autoChangeIndexel = 0;
+            // Set first image immediately
+            autoChangeel.src = autoChangeImagesel[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexel = (autoChangeIndexel + 1) % autoChangeImagesel.length;
+              autoChangeel.setAttribute("src", autoChangeImagesel[autoChangeIndexel]);
+            }, 2000);
+          </script>
+        </div>
+        <!-- <div class="row g-4"> -->
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changeal" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Avalanche Lake</h5>
+                Avalanche Lake was formed due to a landslide and is known for its untouched natural beauty. Surrounded by mountains and greenery, it offers a refreshing atmosphere. It is also popular for trout fishing and trekking.
+
+              </div>
+            </div>
+            <h5>Avalanche Lake</h5>
+            <p>Pristine lake surrounded by mountains and greenery 🌲</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangeal = document.querySelector('.auto-changeal');
+            const autoChangeImagesal = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401739/avalanche_1_sp8y4f.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401654/avalanche-lake5_qhrlla.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401651/avalanche-lake3_kyfqxm.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401649/avalanche_lake2_yufhvv.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401642/avalanche_lake1_uq6yas.jpg'
+            ];
+            let autoChangeIndexal = 0;
+            // Set first image immediately
+            autoChangeal.src = autoChangeImagesal[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexal = (autoChangeIndexal + 1) % autoChangeImagesal.length;
+              autoChangeal.setAttribute("src", autoChangeImagesal[autoChangeIndexal]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changesp" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Shooting Point</h5>
+                Shooting Point is a vast open meadow famous for movie shootings. The wide grasslands and scenic views make it attractive for tourists. It is a great place to enjoy cool weather and natural beauty.
+              </div>
+            </div>
+            <h5>Shooting Point</h5>
+            <p>Open meadow famous for movie shooting 🎬</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangesp = document.querySelector('.auto-changesp');
+            const autoChangeImagessp = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401740/Shooting-Point-Ooty_tkev30.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401729/shooting_point_2_cyobif.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401725/shooting_point_fz7rjw.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401719/shooting_point_1_hd5jwd.jpg',
+              'https://www.mysoretourism.org.in/images/v2/places-to-visit/mysore-maharaja-palace-header-mysore-tourism.jpg'
+            ];
+            let autoChangeIndexsp = 0;
+            // Set first image immediately
+            autoChangesp.src = autoChangeImagessp[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexsp = (autoChangeIndexsp + 1) % autoChangeImagessp.length;
+              autoChangesp.setAttribute("src", autoChangeImagessp[autoChangeIndexsp]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changebg" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Botanical Garden</h5>
+                The Botanical Garden is home to rare plants, exotic trees, and colorful flower beds. It also features a 20-million-year-old fossil tree trunk. The garden is well maintained and attracts thousands of visitors.
+
+              </div>
+            </div>
+            <h5>Botanical Garden</h5>
+            <p>Colorful botanical garden showcasing nature’s beauty🌺</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangebg = document.querySelector('.auto-changebg');
+            const autoChangeImagesbg = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401736/botanical-garden-1067x800_ka0vp4.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401645/botanical_garden_1_kyicgd.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401644/botanical_garden2_jx8ifw.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401644/botanical_garden_2_bdiptd.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401643/botanical_garden_nznyjw.jpg'
+            ];
+            let autoChangeIndexbg = 0;
+            // Set first image immediately
+            autoChangebg.src = autoChangeImagesbg[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexbg = (autoChangeIndexbg + 1) % autoChangeImagesbg.length;
+              autoChangebg.setAttribute("src", autoChangeImagesbg[autoChangeIndexbg]);
+            }, 2000);
+          </script>
+        </div>
+        <!-- <div class="row g-4"> -->
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changeol" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Ooty Lake</h5>
+                Ooty Lake is an artificial lake popular for boating activities. The boat house offers paddle boats, row boats, and motor boats for visitors. It is a favorite family outing spot in Ooty.
+
+              </div>
+            </div>
+            <h5>Ooty Lake</h5>
+            <p>Artificial lake popular for boating activities ⛵</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangeol = document.querySelector('.auto-changeol');
+            const autoChangeImagesol = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401737/Ooty-Lake_a7jxps.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401688/ooty_lake_and_boat_house_ekjisc.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401683/ooty_lake_and_boat_house_1_jploo2.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401682/ooty_lake_and_boat_house_2_hxu0pz.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401678/ooty_lake_and_boat_house_xbryco.jpg'
+            ];
+            let autoChangeIndexol = 0;
+            // Set first image immediately
+            autoChangeol.src = autoChangeImagesol[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexol = (autoChangeIndexol + 1) % autoChangeImagesol.length;
+              autoChangeol.setAttribute("src", autoChangeImagesol[autoChangeIndexol]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changedp" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Doddabetta Peak</h5>
+                Doddabetta Peak is the highest peak in the Nilgiri Hills. It provides panoramic views of the surrounding valleys and mountains. The telescope house at the top allows visitors to enjoy a closer view of the landscape.
+
+              </div>
+            </div>
+            <h5>Doddabetta Peak</h5>
+            <p>Highest peak offering panoramic Nilgiri views ⛰️</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangedp = document.querySelector('.auto-changedp');
+            const autoChangeImagesdp = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401730/doddabetta_bdvhyg.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401657/doddabetta_peak1_vncmlt.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401653/Doddabetta_Peak_fwmw7d.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401653/Doddabetta_Peak_2_nca2e0.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401647/Doddabetta_Peak_1_ass3z9.jpg'
+            ];
+            let autoChangeIndexdp = 0;
+            // Set first image immediately
+            autoChangedp.src = autoChangeImagesdp[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexdp = (autoChangeIndexdp + 1) % autoChangeImagesdp.length;
+              autoChangedp.setAttribute("src", autoChangeImagesdp[autoChangeIndexdp]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changep" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Pine Forest</h5>
+                The Pine Forest in Ooty is filled with tall, straight pine trees creating a cinematic atmosphere. It is a popular location for movie shoots and photography. The quiet surroundings make it perfect for a short nature walk.
+              </div>
+            </div>
+            <h5>Pine Forest</h5>
+            <p>Tall pines whispering in the mountain breeze🌲✨.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangep = document.querySelector('.auto-changep');
+            const autoChangeImagesp = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401736/pine-forest_gmznai.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401717/pine-forest4_cpwjx6.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401716/pine-forest3_wp9eme.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401704/pine-forest_ee1mxs.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401704/pine-forest_ee1mxs.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401695/pine-forest2_rbrice.jpg'
+            ];
+            let autoChangeIndexp = 0;
+            // Set first image immediately
+            autoChangep.src = autoChangeImagesp[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexp = (autoChangeIndexp + 1) % autoChangeImagesp.length;
+              autoChangep.setAttribute("src", autoChangeImagesp[autoChangeIndexp]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changekf" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Kotagiri Falls</h5>
+                Kotagiri Falls is a beautiful natural waterfall located near Kotagiri, a hill station in the Nilgiri Hills. The falls are surrounded by green forests, tea plantations, and cool mountain air, making it a peaceful tourist spot.
+            </div>
+            </div>
+            <h5>Kotagiri Falls</h5>
+            <p>Serene waterfalls hidden in Kotagiri forests🌳💦.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangekf = document.querySelector('.auto-changekf');
+            const autoChangeImageskf = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401737/kotagiri_falls_u5ey3c.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401678/kotagiri-falls2_xruuon.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401665/kotagiri-falls_hhaaxu.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401664/kotagiri-falls1_jypeub.jpg'
+               ];
+            let autoChangeIndexkf = 0;
+            // Set first image immediately
+            autoChangekf.src = autoChangeImageskf[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexkf = (autoChangeIndexkf + 1) % autoChangeImageskf.length;
+              autoChangekf.setAttribute("src", autoChangeImageskf[autoChangeIndexkf]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="explore">
+          <a href='./outside.html'><button class="cta-more-btn">Explore Mysuru-outside places</button></a>
+        </div>
+        
+        </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <!-- CONTACT SECTION PREMIUM -->
+<section id="contact">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title text-center">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Contact us for bookings and enquiries.</p>
+    </div>
+
+    <div class="row mt-4" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius:15px; overflow:hidden;">
+
+      <!-- LEFT: CONTACT DETAILS -->
+      <div class="col-md-5 p-4" style="background:#0f172a; color:white;">
+        
+        <h4 style="margin-bottom:20px;">📍 Our Location</h4>
+
+        <p>
+          <i class="fa fa-map text-warning"></i>
+          <!-- Kuvempu Nagar 2nd Stage,<br>
+          Mysuru, Karnataka -->
+            476/3 Chickkaharadanahalli, Pampapthi Road, Raghavendra Nagar Near - Ashokpuram Railway Station Backside Srirampura Mysuru
+        </p>
+
+        <p>
+          <i class="fa fa-phone text-warning"></i>
+          <a href="tel:+917349396399" style="color:white; text-decoration:none;">
+            +91 7349396399
+          </a>
+        </p>
+
+        <p>
+          <i class="fa fa-envelope text-warning"></i>
+          <a href="mailto:svbstoursandtravels@gmail.com" style="color:white; text-decoration:none;">
+            svbstoursandtravels@gmail.com
+          </a>
+        </p>
+
+        <!-- ACTION BUTTONS -->
+        <div style="margin-top:25px; display:flex; flex-direction:column; gap:10px;">
+          <!-- Directions -->
+          <a href="https://maps.app.goo.gl/qGbN86onHVzcCCCt9?g_st=aw"
+             target="_blank"
+             style="padding:10px; background:#00bcd4; color:white; text-align:center; border-radius:8px; text-decoration:none;">
+             📍 Get Directions
+          </a>
+
+          <!-- Call -->
+          <a href="tel:+917349396399"
+             style="padding:10px; background:#22c55e; color:white; text-align:center; border-radius:8px; text-decoration:none;">
+             📞 Call Now
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/917349396399"
+             target="_blank"
+             style="padding:10px; background:#25D366; color:white; text-align:center; border-radius:8px; text-decoration:none;">
+             💬 WhatsApp Us
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: MAP -->
+      <div class="col-md-7 p-0">
+        <iframe
+          src="https://www.google.com/maps?q=7JGM%2BVP3,+Kuvempu+Nagar+2nd+Stage,+Kuvempu+Nagara,+Mysuru,+Karnataka+570034&z=19&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0; min-height:400px;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- footer -->
+  <footer>
+    <p>© <span id="year"></span> <a href='/' target='_blank'><button
+          style="font-size: 13px;background: linear-gradient(90deg, #00ffff, #00bcd4, #0077ff);-webkit-background-clip: text;color: transparent; border: none;">SVBS
+          Tours & Travels</button></a> All Rights Reserved <br>
+      Atelier by <a target="_blank" href="https://sharatechnovate.com/"><button
+          style="font-size: 15px;background: linear-gradient(90deg, #00ffff, #00bcd4, #0077ff);-webkit-background-clip: text;color: transparent; border: none;">ShaRa
+          Technovate</button></a></p>
+
+  </footer>
+
+  <!-- Floating WhatsApp & Call Buttons -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/917349396399" target="_blank" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:+917349396399" class="call" title="Call Now"><i class="fa fa-phone"></i></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();
+    // Auto-update year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

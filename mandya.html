@@ -1,0 +1,788 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mandya - AK Tours and Travels</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="shortcut icon" href="./fa8ac7c4-98cd-48c4-a129-f15012583b3b.png"
+    type="image/x-icon">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-warning" href="https://svbstoursandtravels.netlify.app/">
+        <!-- <img src="https://res.cloudinary.com/svbs/image/upload/v1771502248/SVBS-Logo_cmgae9.png" height="50px"
+          width="250px" alt="" style="border-radius: 10px;"> -->
+          <img src="./fa8ac7c4-98cd-48c4-a129-f15012583b3b.png" height="80px"
+          width="200px" alt="" style="border-radius: 10px;">
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class='nav-link' href='/'>Home</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#tours'>Tours</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#inside-places'>Mysuru-Places</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#outside-places'>Mysuru-Outside-Places</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#vehicles'>Vehicles</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/#about'>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- tours -->
+  <section id="tours">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Mandya Packages</h2>
+      </div>
+      <!-- <h4 class="text-center text-warning mb-4">Mandya Inside Places</h4> -->
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changeac"
+              src="https://res.cloudinary.com/svbs/image/upload/v1773401495/adichunchanagiri3_lafzws.png">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Adichunchanagiri</h5>
+                <p>Adichunchanagiri is a sacred hill destination known for the ancient Kalabhairaveshwara Temple and the
+                  Adichunchanagiri Math. Surrounded by rocky hills and greenery, it is an important spiritual and
+                  educational center in Karnataka.</p>
+              </div>
+            </div>
+            <h5>Adichunchanagiri</h5>
+            <p>Adichunchanagiri is a spiritual hill center with a famous monastery and temple.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangeac = document.querySelector('.auto-changeac');
+            const autoChangeImagesac = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401485/adichunchanagiri2_tqmfgi.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401495/adichunchanagiri3_lafzws.png',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401487/adichunchanagiri4_ednsbl.jpg',
+              'https://i.pinimg.com/736x/e9/fc/75/e9fc75506bad58b79a7c988627f4d9ac.jpg',
+              'https://pictures.trodly.com/image/activity/3617/size-885x420/mode-crop/6698bd4132429.jpg'
+            ];
+            let autoChangeIndexac = 0;
+            // Set first image immediately
+            autoChangeac.src = autoChangeImagesac[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexac = (autoChangeIndexac + 1) % autoChangeImagesac.length;
+              autoChangeac.setAttribute("src", autoChangeImagesac[autoChangeIndexac]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changekb"
+              src="https://res.cloudinary.com/svbs/image/upload/v1773401525/kokrebellur_bird_sanctuary1_hkzcws.jpg">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Kokkare Bellur Bird Sanctuary</h5>
+                <p>Kokkare Bellur is a unique village bird sanctuary famous for the nesting of painted storks and
+                  spot-billed pelicans. The local community actively protects these migratory birds, making it a
+                  beautiful example of harmony between humans and nature.</p>
+              </div>
+            </div>
+            <h5>Kokkare Bellur Bird Sanctuary</h5>
+            <p>It is a charming village where painted storks nest among locals’ homes.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangekb = document.querySelector('.auto-changekb');
+            const autoChangeImageskb = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401528/kokrebellur_bird_sanctuary3_fxtfzg.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401525/kokrebellur_bird_sanctuary1_hkzcws.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401524/kokrebellur_bird_sanctuary_5_tdynlo.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401524/kokrebellur_bird_sanctuary_2_igzand.jpg'
+            ];
+            let autoChangeIndexkb = 0;
+            // Set first image immediately
+            autoChangekb.src = autoChangeImageskb[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexkb = (autoChangeIndexkb + 1) % autoChangeImageskb.length;
+              autoChangekb.setAttribute("src", autoChangeImageskb[autoChangeIndexkb]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changepp"
+              src="https://res.cloudinary.com/svbs/image/upload/v1773401553/pandavapura4_gor1yn.jpg">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Pandavapura</h5>
+                <p>Pandavapura is a scenic town surrounded by hills, sugarcane fields, and lakes. It is known for its
+                  mythological connection to the Pandavas and offers peaceful countryside views.</p>
+              </div>
+            </div>
+            <h5>Pandavapura</h5>
+            <p>Pandavapura is a historic town linked to the Pandavas of Mahabharata.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangepp = document.querySelector('.auto-changepp');
+            const autoChangeImagespp = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401557/pandavapura3_ldnbl9.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401553/pandavapura4_gor1yn.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401548/pandavapura2_u5t1cm.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401542/pandavapura1_qtby1f.jpg'
+            ];
+            let autoChangeIndexpp = 0;
+            // Set first image immediately
+            autoChangepp.src = autoChangeImagespp[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexpp = (autoChangeIndexpp + 1) % autoChangeImagespp.length;
+              autoChangepp.setAttribute("src", autoChangeImagespp[autoChangeIndexpp]);
+            }, 2000);
+          </script>
+        </div>
+        <!-- <div class="row g-4"> -->
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changesf"
+              src="https://res.cloudinary.com/svbs/image/upload/v1773401557/srirangapatana_fort3_c8wzxq.jpg">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Srirangapatna Fort</h5>
+                <p>Srirangapatna Fort is a historic fortress that once served as the capital of Tipu Sultan. The fort
+                  showcases strong stone walls, ancient gateways, and remnants of Mysore’s rich history.</p>
+              </div>
+            </div>
+            <h5>Srirangapatna Fort</h5>
+            <p>Srirangapatna Fort is a historic fortress with rich tales of Tipu Sultan.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangesf = document.querySelector('.auto-changesf');
+            const autoChangeImagessf = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401557/srirangapatana_fort1_klxsvd.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401557/srirangapatana_fort3_c8wzxq.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401564/srirangapatana_fort4_givow5.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401558/srirangapatana_fort2_v2sbjp.jpg'
+            ];
+            let autoChangeIndexsf = 0;
+            // Set first image immediately
+            autoChangesf.src = autoChangeImagessf[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexsf = (autoChangeIndexsf + 1) % autoChangeImagessf.length;
+              autoChangesf.setAttribute("src", autoChangeImagessf[autoChangeIndexsf]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changert"
+              src="https://res.cloudinary.com/svbs/image/upload/v1773401615/panchalingeshwara-temple4_o63b6o.jpg">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Panchalingeshwara Temple</h5>
+                <p>Panchalingeshwara Temple is a historic Hindu temple located near Pandavapura in the Mysuru district.
+                  It is renowned for its unique dedication to five Shiva lingas, which is rare and gives the temple its
+                  name—“Pancha” meaning five, and “Lingeshwara” referring to Lord Shiva.</p>
+              </div>
+            </div>
+            <h5>Panchalingeshwara Temple</h5>
+            <p>Panchalingeshwara Temple is an ancient temple dedicated to five Shiva lingas.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangert = document.querySelector('.auto-changert');
+            const autoChangeImagesrt = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401616/panchalingeshwara-temple5_jezds1.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401615/panchalingeshwara-temple4_o63b6o.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401596/panchalingeshwara-temple2_ehqgd0.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401593/panchalingeshwara-temple1_ewzf87.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401590/panchalingeshwara-temple_lmnamt.jpg'
+            ];
+            let autoChangeIndexrt = 0;
+            // Set first image immediately
+            autoChangert.src = autoChangeImagesrt[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexrt = (autoChangeIndexrt + 1) % autoChangeImagesrt.length;
+              autoChangert.setAttribute("src", autoChangeImagesrt[autoChangeIndexrt]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changerm"
+              src="https://res.cloudinary.com/svbs/image/upload/v1773401510/edmuri_balmuri_falls4_mcxkzy.jpg">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Edmuri Balmuri Falls</h5>
+                <p>Edmuri Balmuri Falls is a small yet charming waterfall formed by the Cauvery River. It is a favorite
+                  picnic and weekend spot for families and tourists visiting the region.</p>
+              </div>
+            </div>
+            <h5>Edmuri Balmuri Falls</h5>
+            <p>Edmuri Balmuri Falls is a scenic waterfall surrounded by rocky landscapes.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangerm = document.querySelector('.auto-changerm');
+            const autoChangeImagesrm = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401507/edmuri_balmuri_falls1_udvleb.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401510/edmuri_balmuri_falls4_mcxkzy.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401513/edmuri_balmuri_falls2_xy3auf.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401519/edmuri_balmuri_falls3_viuwip.jpg'
+            ];
+            let autoChangeIndexrm = 0;
+            // Set first image immediately
+            autoChangerm.src = autoChangeImagesrm[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexrm = (autoChangeIndexrm + 1) % autoChangeImagesrm.length;
+              autoChangerm.setAttribute("src", autoChangeImagesrm[autoChangeIndexrm]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changekl"
+              src="https://res.cloudinary.com/svbs/image/upload/v1773401486/brahmeshwra_temple_mandya2_lrhiij.jpg">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Brahmeshwara Temple</h5>
+                <p>The Brahmeshwara Temple at Kikkeri is an ancient Hoysala-era temple dedicated to Lord Shiva. It is
+                  known for its artistic stone carvings and historical significance.</p>
+              </div>
+            </div>
+            <h5>Brahmeshwara Temple</h5>
+            <p>Brahmeshwara Temple is an ancient temple known for its Chola-style architecture.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangekl = document.querySelector('.auto-changekl');
+            const autoChangeImageskl = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401486/brahmeshwra_temple_mandya2_lrhiij.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401491/brahmeshwra_temple_mandya1_yftkbo.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401494/brahmeshwra_temple_mandya4_prfxhe.jpg'
+            ];
+            let autoChangeIndexkl = 0;
+            // Set first image immediately
+            autoChangekl.src = autoChangeImageskl[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexkl = (autoChangeIndexkl + 1) % autoChangeImageskl.length;
+              autoChangekl.setAttribute("src", autoChangeImageskl[autoChangeIndexkl]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changerb" src="https://pbs.twimg.com/media/FYFDKcDVUAAtFjS.jpg">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Shivapura Satyagraha Soudha</h5>
+                <p>Shivapura Satyagraha Soudha is a memorial commemorating the freedom struggle and the hoisting of the
+                  Indian national flag during British rule. It stands as a symbol of patriotism and sacrifice.</p>
+              </div>
+            </div>
+            <h5>Shivapura Satyagraha Soudha</h5>
+            <p>This Soudha commemorates the 1938 farmers’ satyagraha for freedom and rights.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangerb = document.querySelector('.auto-changerb');
+            const autoChangeImagesrb = [
+              'https://pbs.twimg.com/media/FYFDKcDVUAAtFjS.jpg',
+              'https://thefederal.com/h-upload/2024/08/10/467203-shivapursatyagrahasoudha.jfif',
+              'https://cdn.tripuntold.com/media/photos/location/2018/10/27/cc7d5c14-ced2-4ba0-a776-26de4a542b98.jpg'
+            ];
+            let autoChangeIndexrb = 0;
+            // Set first image immediately
+            autoChangerb.src = autoChangeImagesrb[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexrb = (autoChangeIndexrb + 1) % autoChangeImagesrb.length;
+              autoChangerb.setAttribute("src", autoChangeImagesrb[autoChangeIndexrb]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changegrs"
+              src="https://res.cloudinary.com/svbs/image/upload/v1773401568/Thonnur_lake4_ulziwt.jpg">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Thonnur Lake</h5>
+                <p>Thonnur Lake, also known as Moti Talab, is a large and picturesque lake surrounded by hills. It is a
+                  popular spot for picnics, birdwatching, and enjoying tranquil sunsets.</p>
+              </div>
+            </div>
+            <h5>Thonnur Lake</h5>
+            <p>Thonnur Lake is a tranquil lake known for birdwatching and scenic views.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangegrs = document.querySelector('.auto-changegrs');
+            const autoChangeImagesgrs = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401577/Thonnur_lake3_xxxppt.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401568/Thonnur_lake4_ulziwt.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401565/Thonnur_lake2_qadssn.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401565/Thonnur_lake1_kui36c.jpg'
+            ];
+            let autoChangeIndexgrs = 0;
+            // Set first image immediately
+            autoChangegrs.src = autoChangeImagesgrs[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexgrs = (autoChangeIndexgrs + 1) % autoChangeImagesgrs.length;
+              autoChangegrs.setAttribute("src", autoChangeImagesgrs[autoChangeIndexgrs]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changekrs"
+              src="https://res.cloudinary.com/svbs/image/upload/v1773401530/nimishamba_temple1_du76yv.webp">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Nimishamba Temple</h5>
+                <p>Nimishamba Temple is a revered shrine dedicated to Goddess Parvati. Located on the banks of the
+                  Cauvery River, it attracts many devotees seeking blessings and peace.</p>
+              </div>
+            </div>
+            <h5>Nimishamba Temple</h5>
+            <p>It is a sacred temple dedicated to Goddess Nimishamba, believed to grant quick blessings.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangekrs = document.querySelector('.auto-changekrs');
+            const autoChangeImageskrs = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401531/nimishamba_temple3_drwjyb.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401530/nimishamba_temple1_du76yv.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401553/nimishmba_temple2_yfrzvr.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401559/nimishamba_temple4_ncsac6.png'
+            ];
+            let autoChangeIndexkrs = 0;
+            // Set first image immediately
+            autoChangekrs.src = autoChangeImageskrs[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexkrs = (autoChangeIndexkrs + 1) % autoChangeImageskrs.length;
+              autoChangekrs.setAttribute("src", autoChangeImageskrs[autoChangeIndexkrs]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changedb"
+              src="https://res.cloudinary.com/svbs/image/upload/v1773401511/daria-daulat-bagh3_ermqlu.jpg">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Daria Daulat Bagh</h5>
+                <p>Daria Daulat Bagh is Tipu Sultan’s summer palace, built mostly of teakwood. The palace is famous for
+                  its stunning murals that depict battles and royal life.</p>
+              </div>
+            </div>
+            <h5>Daria Daulat Bagh</h5>
+            <p>It is the summer palace of Tipu Sultan,famous for its ornate frescoes and garden.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangedb = document.querySelector('.auto-changedb');
+            const autoChangeImagesdb = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401524/daria-daulat-bagh4_kkocrn.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401511/daria-daulat-bagh3_ermqlu.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401508/daria-daulat-bagh1_zapktq.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401506/daria-daulat-bagh2_gagpn3.jpg'
+            ];
+            let autoChangeIndexdb = 0;
+            // Set first image immediately
+            autoChangedb.src = autoChangeImagesdb[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexdb = (autoChangeIndexdb + 1) % autoChangeImagesdb.length;
+              autoChangedb.setAttribute("src", autoChangeImagesdb[autoChangeIndexdb]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changejp"
+              src="https://res.cloudinary.com/svbs/image/upload/v1773401518/Gumbaz-Burial-Chamber_1_tny4ah.jpg">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Gumbaz</h5>
+                <p>The Gumbaz is the elegant burial chamber of Tipu Sultan, his father Hyder Ali, and his mother
+                  Fakhr-Un-Nisa. Surrounded by beautiful gardens, the structure features Indo-Islamic architecture with
+                  impressive domes and pillars.</p>
+              </div>
+            </div>
+            <h5>Gumbaz</h5>
+            <p>Gumbaz is the mausoleum of Tipu Sultan, Tipu’s father Hyder Ali, and his mother.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangejp = document.querySelector('.auto-changejp');
+            const autoChangeImagesjp = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401520/Gumbaz-Burial-Chamber_2_dsehre.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401518/Gumbaz-Burial-Chamber_1_tny4ah.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401525/gumbaz-burial-chamber_apdrmf.jpg',
+              'https://www.theislamicheritage.com/uploads/submission_images/475_IMG_20211115_171710.JPG'
+            ];
+            let autoChangeIndexjp = 0;
+            // Set first image immediately
+            autoChangejp.src = autoChangeImagesjp[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexjp = (autoChangeIndexjp + 1) % autoChangeImagesjp.length;
+              autoChangejp.setAttribute("src", autoChangeImagesjp[autoChangeIndexjp]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changehg" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Hemagiri Falls</h5>
+                <p>Hemagiri Falls is a small scenic waterfall and hill area in Mandya district of Karnataka. It is a
+                  peaceful natural spot near K.R. Pet and is less crowded compared to other famous waterfalls in the
+                  state.</p>
+              </div>
+            </div>
+            <h5>Hemagiri Falls</h5>
+            <p>Hemagiri Falls is a scenic waterfall nestled amidst lush greenery.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangehg = document.querySelector('.auto-changehg');
+            const autoChangeImageshg = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401522/hemagiri_falls_3_ratxup.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401521/hemagiri_falls_2_tzhgnc.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401520/hemagiri_falls_1_vuwv28.webp'
+            ];
+            let autoChangeIndexhg = 0;
+            // Set first image immediately
+            autoChangehg.src = autoChangeImageshg[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexhg = (autoChangeIndexhg + 1) % autoChangeImageshg.length;
+              autoChangehg.setAttribute("src", autoChangeImageshg[autoChangeIndexhg]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changerts"
+              src="https://res.cloudinary.com/svbs/image/upload/v1773401563/srirangapatana_temple1_hosryz.jpg">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Ranganathaswamy Temple</h5>
+                <p>Srirangapatna is famous for the Sri Ranganathaswamy Temple, a significant Vaishnavite pilgrimage site
+                  dedicated to Lord Vishnu in a reclining posture, known for its Dravidian architecture blending Hoysala
+                  and Vijayanagara styles.</p>
+              </div>
+            </div>
+            <h5>Ranganathaswamy Temple</h5>
+            <p>Ranganathaswamy Temple is an ancient temple dedicated to Lord Vishnu in reclining form.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangerts = document.querySelector('.auto-changerts');
+            const autoChangeImagesrts = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401563/srirangapatana_temple4_jwmnet.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401563/srirangapatana_temple1_hosryz.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401566/srirangapatana_temple2_vno0my.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401566/srirangapatana_temple3_s4qcym.jpg'
+            ];
+            let autoChangeIndexrts = 0;
+            // Set first image immediately
+            autoChangerts.src = autoChangeImagesrts[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexrts = (autoChangeIndexrts + 1) % autoChangeImagesrts.length;
+              autoChangerts.setAttribute("src", autoChangeImagesrts[autoChangeIndexrts]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changerlt"
+              src="https://res.cloudinary.com/svbs/image/upload/v1773401546/Lakshminarayana_Temple_Hosaholalu_01_ruh9sv.jpg">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Lakshminarayana Temple</h5>
+                <p>The Lakshminarayana Temple at Hosaholalu is a fine example of Hoysala architecture. It is admired for
+                  its intricate carvings and detailed sculptures depicting Hindu mythology.</p>
+              </div>
+            </div>
+            <h5>Lakshminarayana Temple</h5>
+            <p>Lakshminarayana Temple is a historic temple dedicated to Lord Vishnu and Goddess Lakshmi.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangelt = document.querySelector('.auto-changerlt');
+            const autoChangeImageslt = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401548/laksminaraya_temple_2_aewoyb.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401546/Lakshminarayana_Temple_Hosaholalu_01_ruh9sv.jpg'
+            ];
+            let autoChangeIndexlt = 0;
+            // Set first image immediately
+            autoChangelt.src = autoChangeImageslt[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexlt = (autoChangeIndexlt + 1) % autoChangeImageslt.length;
+              autoChangelt.setAttribute("src", autoChangeImageslt[autoChangeIndexlt]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changeskt"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvhbXpyhGnVgpZjouFSlR4ix3938xkSxANig&amp;s">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Sri Kanteshwara Temple</h5>
+                <p>Sri Nanjundeshwara Temple (also called Sri Kanteshwara Temple) is one of the oldest and most famous
+                  Shiva temples in Karnataka.The temple is often called “Dakshina Kashi” (Kashi of the South) because of
+                  its great religious importance.</p>
+              </div>
+            </div>
+            <h5>Sri Kanteshwara Temple</h5>
+            <p>Sri Kanteshwara Temple is a famous temple dedicated to Lord Shiva.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangeskt = document.querySelector('.auto-changeskt');
+            const autoChangeImagesskt = [
+              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvhbXpyhGnVgpZjouFSlR4ix3938xkSxANig&s',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401579/Sri_kanteshwara_temple_mysore_u9neuf.jpg',
+              'https://mindtrip.ai/cdn-cgi/image/format=webp,w=720/https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/03/4b/52/sculptors-on-gopura.jpg?w=2400',
+              'https://content.jdmagicbox.com/comp/mysore/g9/0821p8222.8222.110318175057.f1g9/catalogue/srikanteshwara-swami-temple-srikantapuri-extension-nanjangud-temples-dbvo9bxk1u-250.jpg'
+            ];
+            let autoChangeIndexskt = 0;
+            // Set first image immediately
+            autoChangeskt.src = autoChangeImagesskt[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexskt = (autoChangeIndexskt + 1) % autoChangeImagesskt.length;
+              autoChangeskt.setAttribute("src", autoChangeImageskt[autoChangeIndexskt]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changerss"
+              src="https://res.cloudinary.com/svbs/image/upload/v1773401582/Shivasamudra_waterfalls__itds2b.jpg">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Shivanasamudra Falls</h5>
+                <p>The falls split into two main cascades: Gaganachukki and Bharachukki.It is surrounded by forests and
+                  rocky cliffs, making it a popular tourist spot.It is surrounded by forests and rocky cliffs, making it
+                  a popular tourist spot.</p>
+              </div>
+            </div>
+            <h5>Shivanasamudra Falls</h5>
+            <p>Shivanasamudra Falls is a majestic twin waterfall on the Kaveri River.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangess = document.querySelector('.auto-changerss');
+            const autoChangeImagesss = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773401578/Photoessay__The_spectacular_beauty_of_Gaganachukki_and_Bharachukki_Falls_Rashminotes_wdhlxk.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773401582/Shivasamudra_waterfalls__itds2b.jpg',
+              'https://cdn1.tripoto.com/media/filter/nl/img/2380291/Image/1707466178_istock_648040276.jpg.webp',
+              'https://karnatakatourism.org/wp-content/uploads/2020/05/Sivanasamudra-falls-4.jpg',
+              'https://www.backpacksters.com/wp-content/uploads/2020/12/India-Karnataka-Shivanasamudra-13.jpg'
+            ];
+            let autoChangeIndexss = 0;
+            // Set first image immediately
+            autoChangess.src = autoChangeImagesss[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexss = (autoChangeIndexss + 1) % autoChangeImagesss.length;
+              autoChangess.setAttribute("src", autoChangeImagesss[autoChangeIndexss]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changemk" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Melkote</h5>
+                <p>Melkote is a historic temple town located about 50 km from Mysuru. It is famous for the
+                  Cheluvanarayana Swamy Temple dedicated to Lord Vishnu. The town also has the Yoga Narasimha Temple on
+                  a hilltop. Melkote is known for its spiritual atmosphere and beautiful landscapes.</p>
+              </div>
+            </div>
+            <h5>Melkote</h5>
+            <p>Melkote is a historic town known for its hilltop temples.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangemk = document.querySelector('.auto-changemk');
+            const autoChangeImagesmk = [
+              'https://i.pinimg.com/736x/0d/6b/be/0d6bbeac171cd57dd38007110863fcb0.jpg',
+              'https://i.pinimg.com/736x/4f/1e/5a/4f1e5a51c0b22b49fcc97d5cae589837.jpg',
+              'https://i.pinimg.com/736x/92/1f/0f/921f0f7cfddc316185bad28bd41c6c66.jpg',
+              'https://i.pinimg.com/736x/0f/dc/48/0fdc484385a61de1091be749c2b97067.jpg',
+              'https://i.pinimg.com/1200x/08/62/da/0862da83fd1f7db19ca935da479b3140.jpg'
+            ];
+            let autoChangeIndexmk = 0;
+            // Set first image immediately
+            autoChangemk.src = autoChangeImagesmk[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexmk = (autoChangeIndexmk + 1) % autoChangeImagesmk.length;
+              autoChangemk.setAttribute("src", autoChangeImagesmk[autoChangeIndexmk]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="explore">
+          <a href='./outside.html'><button class="cta-more-btn">Explore Mysuru-outside places</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- contact -->
+  <!-- CONTACT SECTION PREMIUM -->
+<section id="contact">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title text-center">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Contact us for bookings and enquiries.</p>
+    </div>
+
+    <div class="row mt-4" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius:15px; overflow:hidden;">
+
+      <!-- LEFT: CONTACT DETAILS -->
+      <div class="col-md-5 p-4" style="background:#0f172a; color:white;">
+        
+        <h4 style="margin-bottom:20px;">📍 Our Location</h4>
+
+        <p>
+          <i class="fa fa-map text-warning"></i>
+          <!-- Kuvempu Nagar 2nd Stage,<br>
+          Mysuru, Karnataka -->
+            <!-- 476/3 Chickkaharadanahalli, Pampapthi Road, Raghavendra Nagar Near - Ashokpuram Railway Station Backside Srirampura Mysuru -->
+             Madanayakanahalli,near police station, banglore-562162
+        </p>
+
+        <p>
+          <i class="fa fa-phone text-warning"></i>
+          <a href="tel:+918317441808" style="color:white; text-decoration:none;">
+            +91 8317441808
+          </a>
+        </p>
+
+        <p>
+          <i class="fa fa-envelope text-warning"></i>
+          <a href="mailto:AKtoursandtravels@gmail.com" style="color:white; text-decoration:none;">
+            AKtourstravels07@gmail.com
+          </a>
+        </p>
+
+        <!-- ACTION BUTTONS -->
+        <!-- <div style="margin-top:25px; display:flex; flex-direction:column; gap:10px;"> -->
+          <!-- Directions -->
+          <!-- <a href="https://maps.app.goo.gl/qGbN86onHVzcCCCt9?g_st=aw"
+             target="_blank"
+             style="padding:10px; background:#00bcd4; color:white; text-align:center; border-radius:8px; text-decoration:none;">
+             📍 Get Directions
+          </a> -->
+
+          <!-- Call -->
+          <a href="tel:+918317441808"
+             style="padding:10px; background:#22c55e; color:white; text-align:center; border-radius:8px; text-decoration:none;">
+             📞 Call Now
+          </a>
+          <br>
+          <br>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/918317441808"
+             target="_blank"
+             style="padding:10px; background:#25D366; color:white; text-align:center; border-radius:8px; text-decoration:none;">
+             💬 WhatsApp Us
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: MAP -->
+      <!-- <div class="col-md-7 p-0">
+        <iframe
+          src="https://www.google.com/maps?q=7JGM%2BVP3,+Kuvempu+Nagar+2nd+Stage,+Kuvempu+Nagara,+Mysuru,+Karnataka+570034&z=19&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0; min-height:400px;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div> -->
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- footer -->
+  <footer>
+    <p>© <span id="year"></span> <a href='/' target='_blank'><button
+          style="font-size: 13px;background: linear-gradient(90deg, #00ffff, #00bcd4, #0077ff);-webkit-background-clip: text;color: transparent; border: none;">AK
+          Tours & Travels</button></a> All Rights Reserved <br>
+      <!-- Atelier by <a target="_blank" href="https://sharatechnovate.com/"><button
+          style="font-size: 15px;background: linear-gradient(90deg, #00ffff, #00bcd4, #0077ff);-webkit-background-clip: text;color: transparent; border: none;">ShaRa
+          Technovate</button></a></p> -->
+
+  </footer>
+
+  <!-- Floating WhatsApp & Call Buttons -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/918317441808" target="_blank" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <!-- <a href="tel:+918317441808" class="call" title="Call Now"><i class="fa fa-phone"></i></a> -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="./script.js"></script>
+  <script>AOS.init();
+    // Auto-update year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+
+</body>
+
+</html>

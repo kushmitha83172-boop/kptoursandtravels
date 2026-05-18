@@ -1,0 +1,252 @@
+body {
+    /* background-color: #121212; */
+    background: #0c0f1c;
+    color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+nav {
+    background: #0f1837;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+}
+nav a.nav-link {
+    color: #f5f5f5 !important;
+    font-weight: 500;
+}
+nav a.nav-link:hover {
+    color: #f1c40f !important;
+}
+.hero {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    transition: background-image 1.5s ease-in-out; /* fade effect */
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+.container h1 {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00ffff, #00bcd4, #0077ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.lead{
+    color: #f1c40f;
+}
+.btn{
+    border: solid 2px aqua;
+    font-size: 20px;
+    background: linear-gradient(90deg, #00ffff, #00bcd4, #0077ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+section {
+    padding: 80px 0;
+}
+.section-title h2 {
+    color: #f1c40f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section-title p {
+    color: #dcdcdc;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.vehicle-card, .tour-card {
+    background: #0f1837c4;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    color: #eee;
+}
+.vehicle-card img, .tour-card img, .gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.vehicle-card:hover, .tour-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(241,196,15,0.3);
+}
+
+footer {
+    background: #0f1837;
+    color: #f5f5f5;
+    padding: 10px 0;
+    text-align: center;
+}
+/* Floating WhatsApp & Call Button */
+.floating-buttons {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999;
+}
+.floating-buttons a {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #25D366;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+.floating-buttons a.call {
+    background: #f1c40f;
+    color: #000;
+}
+.floating-buttons a:hover {
+    transform: scale(1.1);
+}
+.tour-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.tour-card img {
+  width: 100%;
+  transition: 0.4s ease;
+}
+
+/* Overlay container */
+.overlay {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+.overlay>div{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hover Effects */
+.tour-card:hover img {
+  filter: blur(4px);
+  transform: scale(1.05);
+}
+
+.tour-card:hover .overlay {
+  opacity: 1;
+}
+:hover.tour-card>button{
+    background-color: #0f1837;
+    color: #f1c40f;
+    display: none;
+}
+.explore{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.explore>a>button{
+    font-size: 20px;
+    background-color: gold; 
+    font-weight: bolder;
+}
+
+
+.cta-more-btn {
+  position: relative;
+  margin-top: 2rem;
+  /* background: #00bcd4; */
+  color: #411717;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: visible;
+}
+
+/* Breathing effect */
+.cta-more-btn {
+  animation: breathe 2.5s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.45;
+    filter: blur(0px);
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0;
+    filter: blur(8px);
+  }
+}
+
+/* Optional hover: stop breathing and feel clickable */
+.cta-more-btn:hover {
+  animation-play-state: paused;
+  transform: scale(1.01);
+}
+.book-btn{
+background:#ff9800;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:6px;
+margin-top:10px;
+width:100%;
+font-weight:bold;
+transition:0.3s;
+}
+
+.book-btn:hover{
+background:#e68900;
+transform:scale(1.03);
+}
