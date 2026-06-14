@@ -4,81 +4,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AK Tours and Travels</title>
+  <title>KP Tours and Travels</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- <link rel="shortcut icon" href="https://res.cloudinary.com/svbs/image/upload/v1771502248/SVBS-Logo_cmgae9.png"
-    type="image/x-icon"> -->
-    <link rel="shortcut icon" href="./fa8ac7c4-98cd-48c4-a129-f15012583b3b.png"
+      <link rel="shortcut icon" href="./e74145ba-2633-4c5f-a614-0a687264c489.png"
     type="image/x-icon">
   <link rel="stylesheet" href="./index.css">
 </head>
 
 
 <body>
-  <!-- LOGIN POPUP
-<div class="modal fade"
-     id="loginModal"
-     tabindex="-1"
-     aria-hidden="true"
-     data-bs-backdrop="static"
-     data-bs-keyboard="false">
-
-  <div class="modal-dialog modal-dialog-centered">
-
-    <div class="modal-content p-3">
-
-      <div class="modal-header border-0">
-
-        <h4 class="modal-title">
-          Welcome to AK Tours
-        </h4>
-
-      </div>
-
-      <div class="modal-body">
-
-        USERNAME -->
-        <!-- <input type="text"
-               id="popupName"
-               class="form-control mb-3"
-               placeholder="Enter Username"> -->
-
-        <!-- EMAIL
-        <input type="email"
-               id="popupEmail"
-               class="form-control mb-3"
-               placeholder="Enter Gmail ID"> -->
-
-        <!-- PHONE -->
-        <!-- <input type="tel"
-               id="popupPhone"
-               class="form-control mb-3"
-               placeholder="Enter Phone Number">
-
-        <button class="btn btn-success w-100"
-                onclick="savePopupUser()">
-
-          Continue
-
-        </button>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div> -->
     
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold text-warning" href="https://svbstoursandtravels.netlify.app/">
         <!-- <img src="https://res.cloudinary.com/svbs/image/upload/v1771502248/SVBS-Logo_cmgae9.png" height="50px"
           width="250px" alt="" style="border-radius: 10px;"> -->
-          <img src="./fa8ac7c4-98cd-48c4-a129-f15012583b3b.png" height="80px"
-          width="200px" alt="" style="border-radius: 10px;">
+          <img src="./e74145ba-2633-4c5f-a614-0a687264c489.png" height="100px"
+          width="150px" alt="" style="border-radius: 10px;">
       </a>
       <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -108,7 +52,7 @@
   <!-- hero -->
   <section class="hero" id="home">
     <div class="container" data-aos="fade-up">
-      <h1>Welcome to <br> AK  <br> Tours & Travels</h1>
+      <h1>Welcome to <br> KP  <br> Tours & Travels</h1>
       <p class="lead">Explore Mysuru and beyond with luxury, safety, and comfort.</p>
       <a href="#tours" class="btn">Explore Now</a>
     </div>
@@ -117,11 +61,7 @@
     const hero = document.querySelector('.hero');
     const images = [
         'https://chatgpt.com/backend-api/estuary/content?id=file_0000000008247207a072c8ac257da154&ts=493956&p=fs&cid=1&sig=c3d0a421d0d1700b8a51e3ab0dfcab9cbe1395bdeca036f80e503dedea783a10&v=0',
-    //   'https://res.cloudinary.com/svbs/image/upload/v1771502248/SVBS-Logo_cmgae9.png'
-      // 'https://res.cloudinary.com/svbs/image/upload/v1771502164/anil_xizvdn.jpg',
-      // 'https://res.cloudinary.com/svbs/image/upload/v1771502174/sipayi_byvfjo.jpg',
-      // 'https://res.cloudinary.com/svbs/image/upload/v1771502168/maha_ejxjfl.jpg'
-    ];
+        ];
     let index = 0;
     setInterval(() => {
       index = (index + 1) % images.length;
@@ -391,8 +331,8 @@ setInterval( () => {
     <div class="container" data-aos="fade-up">
       <div class="section-title">
         <h2>About Us</h2>
-        <p>Owned by <strong style="font-size: 20px;"><br>ANKITHA<BR>KUSHMITHA</strong>
-          <br><br>AK Tours & Travels of Mysuru offers
+        <p>Owned by <strong style="font-size: 20px;"><br>KUSHMITHA<BR>PRAKRUTHI</strong>
+          <br><br>KP Tours & Travels of Mysuru offers
           <br><br>all varieties of vehicles with <span style="font-size: 25px; color: aqua;">AC </span>and <span
             style="font-size: 25px; color: aqua;"> Non-AC</span> options
           <br> <br> to make your journey enjoyable and safe.
@@ -431,13 +371,14 @@ setInterval( () => {
           <i class="fa fa-phone text-warning"></i>
           <a href="tel:+918317441808" style="color:white; text-decoration:none;">
             +91 8317441808
+            +91 
           </a>
-        </p>
+        </p>;
 
         <p>
           <i class="fa fa-envelope text-warning"></i>
           <a href="mailto:AKtoursandtravels@gmail.com" style="color:white; text-decoration:none;">
-            AKtourstravels07@gmail.com
+            KPtourstravels07@gmail.com
           </a>
         </p>
 
@@ -474,12 +415,9 @@ setInterval( () => {
   <!-- footer -->
   <footer>
     <p>© <span id="year"></span> <a href='/' target='_blank'><button
-          style="font-size: 13px;background: linear-gradient(90deg, #00ffff, #00bcd4, #0077ff);-webkit-background-clip: text;color: transparent; border: none;">AK
+          style="font-size: 13px;background: linear-gradient(90deg, #00ffff, #00bcd4, #0077ff);-webkit-background-clip: text;color: transparent; border: none;">KP
           Tours & Travels</button></a> All Rights Reserved <br>
-      <!-- Atelier by <a target="_blank" href="https://sharatechnovate.com/"><button
-          style="font-size: 15px;background: linear-gradient(90deg, #00ffff, #00bcd4, #0077ff);-webkit-background-clip: text;color: transparent; border: none;">ShaRa
-          Technovate</button></a></p> -->
-
+      
   </footer>
 
   <!-- Floating WhatsApp & Call Buttons -->
@@ -839,7 +777,88 @@ window.submitBooking = async function () {
 
 };
 </script>
+<div id="loginModal"
+style="
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+">
 
+<div style="
+background:white;
+padding:25px;
+border-radius:15px;
+width:350px;
+">
+
+<h3 class="text-center">Welcome to AK Tours</h3>
+
+<input
+id="username"
+class="form-control mb-3"
+placeholder="Enter Username">
+
+<input
+id="phone"
+class="form-control mb-3"
+placeholder="Enter Phone Number">
+
+<button
+class="btn btn-success w-100"
+onclick="loginUser()">
+Login
+</button>
+
+</div>
+
+</div>
+ 
+<script type="module">
+import { db } from "./firebase.js";
+import { collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+window.loginUser = async function () {
+
+  const username = document.getElementById("username").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+
+  if (!username || !phone) {
+    alert("Enter all details");
+    return;
+  }
+
+  if (!/^[0-9]{10}$/.test(phone)) {
+    alert("Enter valid phone number");
+    return;
+  }
+
+  try {
+    await addDoc(collection(db, "users"), {
+      username,
+      phone,
+      loginTime: new Date()
+    });
+
+    localStorage.setItem("loggedIn", "true");
+    localStorage.setItem("username", username);
+
+    document.getElementById("loginModal").style.display = "none";
+
+    alert("Login Successful ✅");
+
+  } catch (err) {
+    console.log(err);
+    alert("Login Failed ❌");
+  }
+};
+</script>
 </body>
 
 </html>
