@@ -435,7 +435,7 @@ setInterval( () => {
   </script>
   
 <!-- BOOKING SECTION -->
-<section id="booking">
+ <section id="booking">
   <div class="container">
 
     <h2 class="text-center mb-4">Book Your Trip</h2>
@@ -463,12 +463,12 @@ setInterval( () => {
     <label>Vehicle</label>
     <select id="vehicle" class="form-control mb-3" onchange="calculateTotal()">
       <option value="">Select Vehicle</option>
-      <option value="1500">Hatchback - ₹1500</option>
-      <option value="2500">Sedan - ₹2500</option>
-      <option value="3500">SUV/Innova - ₹3500</option>
-      <option value="5000">Tempo Traveller - ₹5000</option>
-      <option value="7000">Mini Bus - ₹7000</option>
-      <option value="10000">Coach/Volvo - ₹10000</option>
+      <option value="1500">Hatchback - 1500</option>
+      <option value="2500">Sedan - 2500</option>
+      <option value="3500">SUV/Innova - 3500</option>
+      <option value="5000">Tempo Traveller - 5000</option>
+      <option value="7000">Mini Bus - 7000</option>
+      <option value="10000">Coach/Volvo - 10000</option>
     </select>
 
     <!-- PAYMENT -->
@@ -485,6 +485,24 @@ setInterval( () => {
       <h5>Pay Using UPI</h5>
       <p>UPI ID: <strong>8317441808@ybl</strong></p>
     </div>
+    <div id="proofBox"
+style="display:none;background:#f3f4f6;padding:15px;border-radius:10px;margin-bottom:20px;">
+
+<h5>Upload Payment Screenshot</h5>
+
+<input
+type="file"
+id="paymentProof"
+accept="image/*"
+class="form-control mb-3">
+
+<input
+type="number"
+id="paidAmount"
+class="form-control"
+placeholder="Enter Amount Paid">
+
+</div>
 
     <!-- USER DETAILS -->
     <input id="bookingname"
@@ -665,6 +683,11 @@ window.showUPI = function () {
       ? "block"
       : "none";
 
+  document.getElementById("proofBox").style.display =
+    payment === "Online"
+      ? "block"
+      : "none";
+
 };
 
 /* SUBMIT BOOKING */
@@ -703,6 +726,12 @@ window.submitBooking = async function () {
   const total =
     document.getElementById("total").innerText;
 
+  const paymentProof =
+document.getElementById("paymentProof").files[0];
+
+const paidAmount =
+Number(document.getElementById("paidAmount").value);
+
   /* VALIDATION */
   if (
     !category ||
@@ -726,6 +755,26 @@ window.submitBooking = async function () {
     return;
 
   }
+  if (payment === "Online") {
+
+  if (!paymentProof) {
+
+    alert("Please upload payment screenshot ❌");
+    return;
+
+  }
+
+  if (paidAmount < Number(total)) {
+
+    alert(
+      "Paid amount is less than booking amount. Booking cancelled ❌"
+    );
+
+    return;
+
+  }
+
+}
 
   try {
 
@@ -744,7 +793,48 @@ window.submitBooking = async function () {
 
     });
 
-    alert("Booking Successful ✅");
+    // 
+    const bookingId = "KP" + Date.now();
+
+const { jsPDF } = window.jspdf;
+const doc = new jsPDF();
+
+doc.setFont("helvetica", "bold");
+doc.setFontSize(20);
+doc.text("KP Tours & Travels", 60, 20);
+
+doc.setFontSize(14);
+doc.text("BOOKING RECEIPT", 75, 30);
+
+doc.setFont("helvetica", "normal");
+doc.setFontSize(12);
+
+doc.text("Booking ID : " + bookingId, 20, 50);
+doc.text("Customer Name : " + name, 20, 60);
+doc.text("Phone Number : " + phone, 20, 70);
+doc.text("Category : " + category, 20, 80);
+doc.text("Destination : " + place, 20, 90);
+doc.text("Attractions :", 20, 100);
+
+let y = 110;
+
+attractions.forEach(item => {
+  doc.text("- " + item, 30, y);
+  y += 10;
+});
+
+doc.text("Vehicle : " + vehicle, 20, y + 10);
+doc.text("Travel Date : " + date, 20, y + 20);
+doc.text("Payment Method : " + payment, 20, y + 30);
+doc.text("Total Amount : Rs. " + total, 20, y + 40);
+
+doc.setTextColor(0, 128, 0);
+doc.setFont("helvetica", "bold");
+// doc.text("PAYMENT SUCCESSFUL",20,y+60);
+
+doc.save("KP_Travel_Receipt_" + bookingId + ".pdf");
+
+alert("Booking Successful ✅");
 
     /* RESET */
     document.getElementById("category").value = "";
@@ -777,6 +867,7 @@ window.submitBooking = async function () {
 
 };
 </script>
+ <!-- login section -->
 <div id="loginModal"
 style="
 position:fixed;
@@ -798,7 +889,7 @@ border-radius:15px;
 width:350px;
 ">
 
-<h3 class="text-center">Welcome to AK Tours</h3>
+<h3 class="text-center">Welcome to KP Tours</h3>
 
 <input
 id="username"
@@ -859,6 +950,7 @@ window.loginUser = async function () {
   }
 };
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </body>
 
 </html>

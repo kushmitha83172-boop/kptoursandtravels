@@ -79,6 +79,7 @@ Logout
 <th>Attractions</th>
 <th>Vehicle</th>
 <th>Payment</th>
+<th>Payment Proof</th>
 <th>Date</th>
 <th>Total</th>
 <th>Action</th>
@@ -165,7 +166,43 @@ output += `
 <td>${Array.isArray(data.attractions) ? data.attractions.join(", ") : data.attractions}</td>
 <td>${data.vehicle || ""}</td>
 <td>${data.payment || ""}</td>
-<td>${data.date || ""}</td>
+
+<td>
+
+${
+data.payment === "Cash"
+? "<span class='text-success fw-bold'>Cash Payment</span>"
+:
+(
+data.paymentProofUrl
+?
+
+`
+<a
+href="${data.paymentProofUrl}"
+target="_blank"
+class="btn btn-primary btn-sm mb-1">
+View SS
+</a>
+
+<br>
+
+<img
+src="${data.paymentProofUrl}"
+width="100"
+style="cursor:pointer;border-radius:8px"
+onclick="window.open('${data.paymentProofUrl}','_blank')">
+
+`
+
+:
+
+"<span class='text-danger'>No Screenshot Uploaded</span>"
+)
+
+}
+
+</td><td>${data.date || ""}</td>
 <td>₹${data.total || 0}</td>
 <td>
 <button class="btn btn-danger btn-sm"
