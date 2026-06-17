@@ -481,28 +481,10 @@ setInterval( () => {
 
     <!-- UPI -->
     <div id="upiBox"
-      style="display:none;background:#d1fae5;padding:15px;border-radius:10px;margin-bottom:20px;">
+      style="display:none;background:#0a76d4;padding:15px;border-radius:10px;margin-bottom:20px;">
       <h5>Pay Using UPI</h5>
       <p>UPI ID: <strong>8317441808@ybl</strong></p>
     </div>
-    <div id="proofBox"
-style="display:none;background:#f3f4f6;padding:15px;border-radius:10px;margin-bottom:20px;">
-
-<h5>Upload Payment Screenshot</h5>
-
-<input
-type="file"
-id="paymentProof"
-accept="image/*"
-class="form-control mb-3">
-
-<input
-type="number"
-id="paidAmount"
-class="form-control"
-placeholder="Enter Amount Paid">
-
-</div>
 
     <!-- USER DETAILS -->
     <input id="bookingname"
@@ -683,11 +665,6 @@ window.showUPI = function () {
       ? "block"
       : "none";
 
-  document.getElementById("proofBox").style.display =
-    payment === "Online"
-      ? "block"
-      : "none";
-
 };
 
 /* SUBMIT BOOKING */
@@ -726,12 +703,6 @@ window.submitBooking = async function () {
   const total =
     document.getElementById("total").innerText;
 
-  const paymentProof =
-document.getElementById("paymentProof").files[0];
-
-const paidAmount =
-Number(document.getElementById("paidAmount").value);
-
   /* VALIDATION */
   if (
     !category ||
@@ -755,26 +726,6 @@ Number(document.getElementById("paidAmount").value);
     return;
 
   }
-  if (payment === "Online") {
-
-  if (!paymentProof) {
-
-    alert("Please upload payment screenshot ❌");
-    return;
-
-  }
-
-  if (paidAmount < Number(total)) {
-
-    alert(
-      "Paid amount is less than booking amount. Booking cancelled ❌"
-    );
-
-    return;
-
-  }
-
-}
 
   try {
 
@@ -883,7 +834,7 @@ z-index:9999;
 ">
 
 <div style="
-background:white;
+background:rgb(10, 13, 233);
 padding:25px;
 border-radius:15px;
 width:350px;

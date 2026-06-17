@@ -46,7 +46,7 @@ if(localStorage.getItem("adminLoggedIn")!=="true"){
 <div class="row">
 
 <!-- SIDEBAR -->
-<div class="col-md-2 sidebar">
+<!-- <div class="col-md-2 sidebar">
 <h3>AK Tours</h3>
 <hr>
 
@@ -59,7 +59,7 @@ if(localStorage.getItem("adminLoggedIn")!=="true"){
 <button class="btn btn-danger w-100" onclick="logout()">
 Logout
 </button>
-</div>
+</div> -->
 
 <!-- CONTENT -->
 <div class="col-md-10 content">
@@ -79,10 +79,48 @@ Logout
 <th>Attractions</th>
 <th>Vehicle</th>
 <th>Payment</th>
-<th>Payment Proof</th>
 <th>Date</th>
 <th>Total</th>
-<th>Action</th>
+<!-- <td>
+<button class="btn btn-success btn-sm me-1"
+onclick="approveBooking('${docItem.id}', '${data.phone}', '${data.name}')">
+Approve
+</button>
+
+<button class="btn btn-danger btn-sm me-1"
+onclick="rejectBooking('${docItem.id}', '${data.phone}', '${data.name}')">
+Reject
+</button>
+
+<button class="btn btn-dark btn-sm"
+onclick="deleteBooking('${docItem.id}')">
+Delete
+</button>
+</td>
+ -->
+<td>
+
+<button class="btn btn-success btn-sm mb-1"
+onclick="approveBooking('${docItem.id}','${data.phone}','${data.name}')">
+Approve
+</button>
+
+<br>
+
+<button class="btn btn-danger btn-sm mb-1"
+onclick="rejectBooking('${docItem.id}','${data.phone}','${data.name}')">
+Reject
+</button>
+
+<br>
+
+<button class="btn btn-dark btn-sm"
+onclick="deleteBooking('${docItem.id}')">
+Delete
+</button>
+
+</td>
+<!-- <th>Action</th> -->
 </tr>
 </thead>
 
@@ -127,15 +165,66 @@ Logout
 
 import { db } from "./firebase.js";
 
+// import {
+// collection,
+// query,
+// orderBy,
+// getDocs,
+// deleteDoc,
+// doc
+// } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 import {
 collection,
 query,
 orderBy,
 getDocs,
 deleteDoc,
-doc
+doc,
+updateDoc
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+window.approveBooking = async function(id, phone, name){
 
+const message =
+`🎉 Hello ${name}, your travel booking is APPROVED by KP Tours & Travels.
+
+Thank you for choosing us!`;
+
+openWhatsApp(phone, message);
+
+await updateDoc(doc(db,"bookings",id), {
+status: "approved"
+});
+
+loadBookings();
+}
+
+window.rejectBooking = async function(id, phone, name){
+
+const message =
+`❌ Hello ${name}, sorry your travel booking is REJECTED.
+
+Please contact us for more details.`;
+
+openWhatsApp(phone, message);
+
+await updateDoc(doc(db,"bookings",id), {
+status: "rejected"
+});
+
+loadBookings();
+}
+function openWhatsApp(phone, message){
+
+// convert Indian number properly
+let formattedPhone = phone.replace(/\D/g,'');
+if(formattedPhone.length === 10){
+formattedPhone = "91" + formattedPhone;
+}
+
+const url = `https://wa.me/${formattedPhone}?text=${encodeURIComponent(message)}`;
+
+window.open(url, "_blank");
+}
 
 // ================= LOAD BOOKINGS =================
 async function loadBookings(){
@@ -156,6 +245,28 @@ snapshot.forEach((docItem)=>{
 
 const data = docItem.data();
 
+// output += `
+// <tr>
+// <td>${sno}</td>
+// <td>${data.name || ""}</td>
+// <td>${data.phone || ""}</td>
+// <td>${data.category || ""}</td>
+// <td>${data.place || ""}</td>
+// <td>${Array.isArray(data.attractions) ? data.attractions.join(", ") : data.attractions}</td>
+// <td>${data.vehicle || ""}</td>
+// <td>${data.payment || ""}</td>
+
+
+// <td>${data.date || ""}</td>
+// <td>₹${data.total || 0}</td>
+// <td>
+// <button class="btn btn-danger btn-sm"
+// onclick="deleteBooking('${docItem.id}')">
+// Delete
+// </button>
+// </td>
+// </tr>
+// `;
 output += `
 <tr>
 <td>${sno}</td>
@@ -166,50 +277,32 @@ output += `
 <td>${Array.isArray(data.attractions) ? data.attractions.join(", ") : data.attractions}</td>
 <td>${data.vehicle || ""}</td>
 <td>${data.payment || ""}</td>
+<td>${data.date || ""}</td>
+<td>₹${data.total || 0}</td>
 
 <td>
 
-${
-data.payment === "Cash"
-? "<span class='text-success fw-bold'>Cash Payment</span>"
-:
-(
-data.paymentProofUrl
-?
-
-`
-<a
-href="${data.paymentProofUrl}"
-target="_blank"
-class="btn btn-primary btn-sm mb-1">
-View SS
-</a>
+<button class="btn btn-success btn-sm mb-1"
+onclick="approveBooking('${docItem.id}','${data.phone}','${data.name}')">
+Approve
+</button>
 
 <br>
 
-<img
-src="${data.paymentProofUrl}"
-width="100"
-style="cursor:pointer;border-radius:8px"
-onclick="window.open('${data.paymentProofUrl}','_blank')">
+<button class="btn btn-danger btn-sm mb-1"
+onclick="rejectBooking('${docItem.id}','${data.phone}','${data.name}')">
+Reject
+</button>
 
-`
+<br>
 
-:
-
-"<span class='text-danger'>No Screenshot Uploaded</span>"
-)
-
-}
-
-</td><td>${data.date || ""}</td>
-<td>₹${data.total || 0}</td>
-<td>
-<button class="btn btn-danger btn-sm"
+<button class="btn btn-dark btn-sm"
 onclick="deleteBooking('${docItem.id}')">
 Delete
 </button>
+
 </td>
+
 </tr>
 `;
 
@@ -223,6 +316,31 @@ document.getElementById("bookingTable").innerHTML = output;
 catch(error){
 console.log(error);
 alert("Failed to load bookings");
+}
+
+}
+// ================= DELETE BOOKING =================
+window.deleteBooking = async function(id){
+
+if(confirm("Are you sure you want to delete this booking?")){
+
+try{
+
+await deleteDoc(doc(db,"bookings",id));
+
+alert("Booking deleted successfully");
+
+loadBookings();
+
+}
+catch(error){
+
+console.log(error);
+
+alert("Delete failed");
+
+}
+
 }
 
 }
